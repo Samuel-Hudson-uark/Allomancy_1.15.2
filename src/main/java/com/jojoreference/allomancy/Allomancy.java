@@ -1,11 +1,7 @@
 package com.jojoreference.allomancy;
 
-import com.jojoreference.allomancy.blocks.CopperBlock;
-import com.jojoreference.allomancy.blocks.CopperOre;
-import com.jojoreference.allomancy.blocks.ModBlocks;
-import com.jojoreference.allomancy.items.ArmorMaterialList;
-import com.jojoreference.allomancy.items.copper.*;
-import com.jojoreference.allomancy.items.ToolMaterialList;
+import com.jojoreference.allomancy.blocks.*;
+import com.jojoreference.allomancy.items.*;
 import com.jojoreference.allomancy.setup.ClientProxy;
 import com.jojoreference.allomancy.setup.IProxy;
 import com.jojoreference.allomancy.setup.ModSetup;
@@ -53,6 +49,9 @@ public class Allomancy
             // register a new block here
             event.getRegistry().register(new CopperOre());
             event.getRegistry().register(new CopperBlock());
+
+            event.getRegistry().register(new TinOre());
+            event.getRegistry().register(new TinBlock());
         }
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
@@ -72,9 +71,25 @@ public class Allomancy
             event.getRegistry().register(new CopperLeggings(ArmorMaterialList.CopperTier, EquipmentSlotType.LEGS, setup.itemGroup));
             event.getRegistry().register(new CopperBoots(ArmorMaterialList.CopperTier, EquipmentSlotType.FEET, setup.itemGroup));
 
-            // register a new block item here
             event.getRegistry().register(new BlockItem(ModBlocks.COPPERORE, properties).setRegistryName("copperore"));
             event.getRegistry().register(new BlockItem(ModBlocks.COPPERBLOCK, properties).setRegistryName("copperblock"));
+
+            event.getRegistry().register(new TinIngot());
+            event.getRegistry().register(new TinNugget());
+
+            event.getRegistry().register(new TinSword(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup));
+            event.getRegistry().register(new TinAxe(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup));
+            event.getRegistry().register(new TinPickaxe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
+            event.getRegistry().register(new TinShovel(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
+            event.getRegistry().register(new TinHoe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
+
+            event.getRegistry().register(new TinHelmet(ArmorMaterialList.TinTier, EquipmentSlotType.HEAD, setup.itemGroup));
+            event.getRegistry().register(new TinChestplate(ArmorMaterialList.TinTier, EquipmentSlotType.CHEST, setup.itemGroup));
+            event.getRegistry().register(new TinLeggings(ArmorMaterialList.TinTier, EquipmentSlotType.LEGS, setup.itemGroup));
+            event.getRegistry().register(new TinBoots(ArmorMaterialList.TinTier, EquipmentSlotType.FEET, setup.itemGroup));
+
+            event.getRegistry().register(new BlockItem(ModBlocks.TINORE, properties).setRegistryName("tinore"));
+            event.getRegistry().register(new BlockItem(ModBlocks.TINBLOCK, properties).setRegistryName("tinblock"));
         }
     }
 }

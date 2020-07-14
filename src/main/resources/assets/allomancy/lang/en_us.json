@@ -1,4 +1,7 @@
 {
+  "_comment": "Creative Tabs",
+  "itemGroup.allomancy": "Allomancy",
+
   "_comment": "Copper",
   "block.allomancy.copperore": "Copper Ore",
   "block.allomancy.copperblock": "Block of Copper",
@@ -14,6 +17,19 @@
   "item.allomancy.copperleggings": "Copper Leggings",
   "item.allomancy.copperboots": "Copper Boots",
 
-  "_comment": "Creative Tabs",
-  "itemGroup.allomancy": "Allomancy"
+  "_comment": "Tin",
+  "block.allomancy.tinore": "Tin Ore",
+  "block.allomancy.tinblock": "Block of Tin",
+  "item.allomancy.tiningot": "Tin Ingot",
+  "item.allomancy.tinnugget": "Tin Nugget",
+  "item.allomancy.tinpickaxe": "Tin Pickaxe",
+  "item.allomancy.tinaxe": "Tin Axe",
+  "item.allomancy.tinsword": "Tin Sword",
+  "item.allomancy.tinshovel": "Tin Shovel",
+  "item.allomancy.tinhoe": "Tin Hoe",
+  "item.allomancy.tinhelmet": "Tin Helmet",
+  "item.allomancy.tinchestplate": "Tin Chestplate",
+  "item.allomancy.tinleggings": "Tin Leggings",
+  "item.allomancy.tinboots": "Tin Boots"
+
 }

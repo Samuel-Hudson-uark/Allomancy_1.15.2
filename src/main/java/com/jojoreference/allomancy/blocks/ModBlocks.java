@@ -8,4 +8,10 @@ public class ModBlocks {
 
     @ObjectHolder("allomancy:copperblock")
     public static CopperBlock COPPERBLOCK;
+
+    @ObjectHolder("allomancy:tinore")
+    public static TinOre TINORE;
+
+    @ObjectHolder("allomancy:tinblock")
+    public static TinBlock TINBLOCK;
 }

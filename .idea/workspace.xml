@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2d4b650-f835-4274-b991-a0d2e2d210a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Allomancy_1.15.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1egfTzISOKIQVNY9Dg9VPQf8M6e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.runClient" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2d4b650-f835-4274-b991-a0d2e2d210a9" name="Default Changelist" comment="" />
+      <created>1594748167563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594748167563</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="142" y="5" key="SettingsEditor" timestamp="1594748197567">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1594748197567" />
+  </component>
+</project>

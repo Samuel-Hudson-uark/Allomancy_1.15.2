@@ -7,6 +7,7 @@ import net.minecraft.item.crafting.Ingredient;
 public enum ToolMaterialList implements IItemTier {
 
     CopperTier(2.0f, 5.0f, 250, 2, 14, ModItems.COPPERINGOT);
+    TinTier(2.0f, 4.0f, 170, 1, 8, ModItems.TININGOT);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;

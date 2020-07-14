@@ -10,6 +10,7 @@ import net.minecraft.util.SoundEvents;
 public enum ArmorMaterialList implements IArmorMaterial {
 
     CopperTier(14, new int[]{2,5,4,1}, 9, 0, "allomancy:copper", SoundEvents.ITEM_ARMOR_EQUIP_IRON, ModItems.COPPERINGOT);
+    TinTier(10, new int[]{2,4,2,1}, 8, 0, "allomancy:tin", SoundEvents.ITEM_ARMOR_EQUIP_IRON, ModItems.TININGOT);
 
     private int durability, enchantability;
     private int[] damageReductionAmount;
