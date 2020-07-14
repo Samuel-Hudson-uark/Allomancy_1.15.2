@@ -27,11 +27,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Fixed bugs from class generation">
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/tinblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/tinore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tiningot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tinsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/copper_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/copper_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/tinblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/tinore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tin_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tin_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tin_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tin_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tin_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tiningot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/tinsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-13-11.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-13-12.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/tinblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/tinore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tiningot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/tinsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/copper_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/copper_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/tin_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/tin_layer_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-13-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-13-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/copper/CopperHoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/copper/CopperHoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/tin/TinHoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/tin/TinHoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/copper_layer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/copper_layer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/gold_ingot.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594688620834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed bugs from class generation">
+      <created>1594753470904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594753470904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,38 +342,38 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594682128644" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1594754067454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067454" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1594754067454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067454" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1594754067453">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067453" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1594754067454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067454" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1594754067277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067277" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1594754067277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067277" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1594754067277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1594689291859">
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067277" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1594754067277">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594689291859" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594754067277" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1594752856394">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -290,17 +386,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1594752908302" />
-    <state x="667" y="273" width="585" height="592" key="find.popup" timestamp="1594677712836">
+    <state x="667" y="273" width="585" height="592" key="find.popup" timestamp="1594753771668">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="273" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594677712836" />
+    <state x="667" y="273" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594753771668" />
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594752976995">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594752976995" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594684901720">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594753738934">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594684901720" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594753738934" />
   </component>
 </project>

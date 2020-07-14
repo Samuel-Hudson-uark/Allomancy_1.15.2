@@ -6,7 +6,7 @@ import net.minecraft.item.HoeItem;
 
 public class CopperHoe extends HoeItem {
 
-    public CopperHoe(IItemTier tier, int attackDamageIn, float attackSpeedIn, ItemGroup group) {
+    public CopperHoe(IItemTier tier, float attackSpeedIn, ItemGroup group) {
         super(tier, attackSpeedIn, new Properties().group(group));
         setRegistryName("copperhoe");
     }

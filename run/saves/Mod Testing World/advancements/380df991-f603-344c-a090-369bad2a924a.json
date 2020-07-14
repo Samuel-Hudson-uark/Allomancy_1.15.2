@@ -17,19 +17,7 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/crossbow": {
-    "criteria": {
-      "has_stick": "2020-07-13 19:18:39 -0500"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/wooden_pickaxe": {
-    "criteria": {
-      "has_stick": "2020-07-13 19:18:39 -0500"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2020-07-13 19:18:39 -0500"
     },
@@ -47,17 +35,11 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/coal_block": {
+  "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_coal": "2020-07-13 14:33:27 -0500"
+      "has_lots_of_items": "2020-07-14 14:15:44 -0500"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:desert": "2020-07-13 13:41:00 -0500"
-    },
-    "done": false
   },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
@@ -70,6 +52,30 @@
       "crafting_table": "2020-07-13 19:18:32 -0500"
     },
     "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_stick": "2020-07-13 19:18:39 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2020-07-13 19:18:39 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2020-07-13 14:33:27 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert": "2020-07-13 13:41:00 -0500"
+    },
+    "done": false
   },
   "DataVersion": 2230
 }

@@ -6,8 +6,8 @@ import net.minecraft.item.ItemGroup;
 
 public class TinHoe extends HoeItem {
 
-    public TinHoe(IItemTier tier, int attackDamageIn, float attackSpeedIn, ItemGroup group) {
-        super(tier, attackDamageIn, attackSpeedIn, new Properties().group(group));
+    public TinHoe(IItemTier tier, float attackSpeedIn, ItemGroup group) {
+        super(tier, attackSpeedIn, new Properties().group(group));
         setRegistryName("tinhoe");
     }
 }

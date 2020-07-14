@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:tinpickaxe"
+    },
+    {
+      "item": "allomancy:tinshovel"
+    },
+    {
+      "item": "allomancy:tinaxe"
+    },
+    {
+      "item": "allomancy:tinhoe"
+    },
+    {
+      "item": "allomancy:tinsword"
+    },
+    {
+      "item": "allomancy:tinhelmet"
+    },
+    {
+      "item": "allomancy:tinchestplate"
+    },
+    {
+      "item": "allomancy:tinleggings"
+    },
+    {
+      "item": "allomancy:tinboots"
+    }
+  ],
+  "result": "allomancy:tinnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -83,7 +83,7 @@ public class Allomancy
             event.getRegistry().register(new CopperAxe(ToolMaterialList.CopperTier, 8, -3.1f, setup.itemGroup));
             event.getRegistry().register(new CopperPickaxe(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup));
             event.getRegistry().register(new CopperShovel(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new CopperHoe(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup));
+            event.getRegistry().register(new CopperHoe(ToolMaterialList.CopperTier, 0, setup.itemGroup));
 
             event.getRegistry().register(new CopperHelmet(ArmorMaterialList.CopperTier, EquipmentSlotType.HEAD, setup.itemGroup));
             event.getRegistry().register(new CopperChestplate(ArmorMaterialList.CopperTier, EquipmentSlotType.CHEST, setup.itemGroup));
@@ -100,7 +100,7 @@ public class Allomancy
             event.getRegistry().register(new TinAxe(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup));
             event.getRegistry().register(new TinPickaxe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
             event.getRegistry().register(new TinShovel(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new TinHoe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
+            event.getRegistry().register(new TinHoe(ToolMaterialList.TinTier, 0, setup.itemGroup));
 
             event.getRegistry().register(new TinHelmet(ArmorMaterialList.TinTier, EquipmentSlotType.HEAD, setup.itemGroup));
             event.getRegistry().register(new TinChestplate(ArmorMaterialList.TinTier, EquipmentSlotType.CHEST, setup.itemGroup));
