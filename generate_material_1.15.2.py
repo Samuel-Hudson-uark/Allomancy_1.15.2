@@ -216,7 +216,7 @@ for block in blocks:
   "parent": "block/cube_all",
   "textures": {{
     "particle": "allomancy:block/{0}{1}",
-    "all": "allomancy:block/{1}{1}"
+    "all": "allomancy:block/{0}{1}"
   }}
 }}""".format(material, block))
 

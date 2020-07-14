@@ -2,6 +2,6 @@
   "parent": "block/cube_all",
   "textures": {
     "particle": "allomancy:block/tinore",
-    "all": "allomancy:block/oreore"
+    "all": "allomancy:block/tinore"
   }
 }
