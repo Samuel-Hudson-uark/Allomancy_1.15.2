@@ -1,5 +1,19 @@
 {
+  "_comment": "Copper",
   "block.allomancy.copperore": "Copper Ore",
+  "block.allomancy.copperblock": "Block of Copper",
+  "item.allomancy.copperingot": "Copper Ingot",
+  "item.allomancy.coppernugget": "Copper Nugget",
+  "item.allomancy.copperpickaxe": "Copper Pickaxe",
+  "item.allomancy.copperaxe": "Copper Axe",
+  "item.allomancy.coppersword": "Copper Sword",
+  "item.allomancy.coppershovel": "Copper Shovel",
+  "item.allomancy.copperhoe": "Copper Hoe",
+  "item.allomancy.copperhelmet": "Copper Helmet",
+  "item.allomancy.copperchestplate": "Copper Chestplate",
+  "item.allomancy.copperleggings": "Copper Leggings",
+  "item.allomancy.copperboots": "Copper Boots",
 
-  "item.allomancy.copperingot": "Copper Ingot"
+  "_comment": "Creative Tabs",
+  "itemGroup.allomancy": "Allomancy"
 }

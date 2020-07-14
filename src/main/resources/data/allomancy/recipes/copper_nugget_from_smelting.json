@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:copperpickaxe"
+    },
+    {
+      "item": "allomancy:coppershovel"
+    },
+    {
+      "item": "allomancy:copperaxe"
+    },
+    {
+      "item": "allomancy:copperhoe"
+    },
+    {
+      "item": "allomancy:coppersword"
+    },
+    {
+      "item": "allomancy:copperhelmet"
+    },
+    {
+      "item": "allomancy:copperchestplate"
+    },
+    {
+      "item": "allomancy:copperleggings"
+    },
+    {
+      "item": "allomancy:copperboots"
+    }
+  ],
+  "result": "allomancy:coppernugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}
