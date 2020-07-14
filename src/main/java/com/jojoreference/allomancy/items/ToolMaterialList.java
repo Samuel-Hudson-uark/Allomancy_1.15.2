@@ -6,14 +6,14 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier {
 
-    CopperTier(2.0f, 5.0f, 250, 2, 14, ModItems.COPPERINGOT);
+    CopperTier(2.0f, 5.0f, 250, 2, 14, ModItems.COPPERINGOT),
     TinTier(2.0f, 4.0f, 170, 1, 8, ModItems.TININGOT);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;
     private Item repairMaterial;
 
-    private ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
+    ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
     {
         this.harvestLevel = harvestLevel;
         this.attackDamage = attackDamage;

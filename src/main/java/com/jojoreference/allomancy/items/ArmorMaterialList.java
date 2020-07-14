@@ -9,7 +9,7 @@ import net.minecraft.util.SoundEvents;
 
 public enum ArmorMaterialList implements IArmorMaterial {
 
-    CopperTier(14, new int[]{2,5,4,1}, 9, 0, "allomancy:copper", SoundEvents.ITEM_ARMOR_EQUIP_IRON, ModItems.COPPERINGOT);
+    CopperTier(14, new int[]{2,5,4,1}, 9, 0, "allomancy:copper", SoundEvents.ITEM_ARMOR_EQUIP_IRON, ModItems.COPPERINGOT),
     TinTier(10, new int[]{2,4,2,1}, 8, 0, "allomancy:tin", SoundEvents.ITEM_ARMOR_EQUIP_IRON, ModItems.TININGOT);
 
     private int durability, enchantability;
@@ -20,7 +20,7 @@ public enum ArmorMaterialList implements IArmorMaterial {
     private SoundEvent soundEvent;
     private Item repairMaterial;
 
-    private ArmorMaterialList(int durability, int[] damageReductionAmount, int enchantability, float toughness, String name, SoundEvent soundEvent, Item repairMaterial) {
+    ArmorMaterialList(int durability, int[] damageReductionAmount, int enchantability, float toughness, String name, SoundEvent soundEvent, Item repairMaterial) {
         this.durability = durability;
         this.damageReductionAmount = damageReductionAmount;
         this.enchantability = enchantability;
@@ -32,7 +32,7 @@ public enum ArmorMaterialList implements IArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlotType slotIn) {
-        return durabilityMultiplier[(slotIn.ordinal()*-1)+5];
+        return durabilityMultiplier[(slotIn.ordinal()*-1)+5]*durability;
     }
 
     @Override

@@ -1,6 +1,8 @@
 package com.jojoreference.allomancy;
 
 import com.jojoreference.allomancy.blocks.*;
+import com.jojoreference.allomancy.items.copper.*;
+import com.jojoreference.allomancy.items.tin.*;
 import com.jojoreference.allomancy.items.*;
 import com.jojoreference.allomancy.setup.ClientProxy;
 import com.jojoreference.allomancy.setup.IProxy;
@@ -23,6 +25,23 @@ import org.apache.logging.log4j.Logger;
 @Mod("allomancy")
 public class Allomancy
 {
+    /*
+    TODO:
+    Metals to add:
+    Iron (in game already)
+    Gold (in game already)
+    Steel (alloy)
+    Tin
+    Pewter (alloy)
+    Bronze (alloy)
+    Copper (done)
+    Zinc
+    Brass (alloy)
+    Aluminium
+    Lead
+    Atium
+    Lerasium
+     */
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
     public static ModSetup setup = new ModSetup();
