@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": {"model": "allomancy:block/alloymixer"},
+    "facing=south": {"model": "allomancy:block/alloymixer", "y": 180},
+    "facing=west": {"model": "allomancy:block/alloymixer", "y": 270},
+    "facing=east": {"model": "allomancy:block/alloymixer", "y": 90},
+    "facing=up": {"model": "allomancy:block/alloymixer", "x": -90},
+    "facing=down": {"model": "allomancy:block/alloymixer", "x": 90}
+  }
+}

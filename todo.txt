@@ -1,16 +1,20 @@
 
 TODO:
-Metals to add:
-Iron (in game already)
-Gold (in game already)
-Steel (alloy)
-Tin (done)
-Pewter (alloy)
-Bronze (alloy)
-Copper (done)
-Zinc
-Brass (alloy)
-Aluminium
-Lead
-Atium
-Lerasium
+Metals have all been added, some of them need better sprites.
+
+Dusts of all metals
+*in progress: Alloy mixer: stores dusts, uses them to alloy or fill a bottle
+Automatic Lurcher: uses ironpulling to extract dust from metal (leaves stone)
+Hammer: hammers ingots and ores into dust
+Automatic Coinshot: uses steelpushing to automatically hammer
+Hops: store in barrel to make alcohol?
+Copper clips
+
+The Alloying minigame: enter the ratio of two dusts to combine in the alloy mixer.
+    This ratio is random for each world for each alloy, with upper and lower bounds.
+    If the ratio is wrong, you obtain a "failed mixture".
+        "Flawed" if the ratio was way off
+        "Almost correct" if the ratio was close
+        Tells you which alloy was used too much
+    Maybe books or named paper in chest loot tells you this
+    When a dust is successfully made, ratios are locked in

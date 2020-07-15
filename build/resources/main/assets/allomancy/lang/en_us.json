@@ -2,6 +2,8 @@
   "_comment": "Creative Tabs",
   "itemGroup.allomancy": "Allomancy",
 
+  "block.allomancy.alloymixer": "Alloy Mixer",
+
   "_comment": "Copper",
   "block.allomancy.copperore": "Copper Ore",
   "block.allomancy.copperblock": "Block of Copper",
@@ -63,7 +65,6 @@
   "item.allomancy.aluminiumboots": "Aluminium Boots",
 
   "_comment": "Brass",
-  "block.allomancy.brassore": "Brass Ore",
   "block.allomancy.brassblock": "Block of Brass",
   "item.allomancy.brassingot": "Brass Ingot",
   "item.allomancy.brassnugget": "Brass Nugget",
@@ -93,7 +94,6 @@
   "item.allomancy.zincboots": "Zinc Boots",
 
   "_comment": "Bronze",
-  "block.allomancy.bronzeore": "Bronze Ore",
   "block.allomancy.bronzeblock": "Block of Bronze",
   "item.allomancy.bronzeingot": "Bronze Ingot",
   "item.allomancy.bronzenugget": "Bronze Nugget",
@@ -108,7 +108,6 @@
   "item.allomancy.bronzeboots": "Bronze Boots",
 
   "_comment": "Pewter",
-  "block.allomancy.pewterore": "Pewter Ore",
   "block.allomancy.pewterblock": "Block of Pewter",
   "item.allomancy.pewteringot": "Pewter Ingot",
   "item.allomancy.pewternugget": "Pewter Nugget",
@@ -123,7 +122,6 @@
   "item.allomancy.pewterboots": "Pewter Boots",
 
   "_comment": "Steel",
-  "block.allomancy.steelore": "Steel Ore",
   "block.allomancy.steelblock": "Block of Steel",
   "item.allomancy.steelingot": "Steel Ingot",
   "item.allomancy.steelnugget": "Steel Nugget",

@@ -2,6 +2,8 @@
   "_comment": "Creative Tabs",
   "itemGroup.allomancy": "Allomancy",
 
+  "block.allomancy.alloymixer": "Alloy Mixer",
+
   "_comment": "Copper",
   "block.allomancy.copperore": "Copper Ore",
   "block.allomancy.copperblock": "Block of Copper",

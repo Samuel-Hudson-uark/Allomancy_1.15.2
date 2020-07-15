@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "particle": "allomancy:block/brassore",
-    "all": "allomancy:block/brassore"
-  }
-}
