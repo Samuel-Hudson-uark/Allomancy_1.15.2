@@ -16,6 +16,7 @@ import com.jojoreference.allomancy.items.steel.*;
 import com.jojoreference.allomancy.items.lead.*;
 import com.jojoreference.allomancy.items.tin.*;
 import com.jojoreference.allomancy.items.*;
+import com.jojoreference.allomancy.items.dusts.*;
 import com.jojoreference.allomancy.setup.ClientProxy;
 import com.jojoreference.allomancy.setup.IProxy;
 import com.jojoreference.allomancy.setup.ModSetup;
@@ -117,10 +118,34 @@ public class Allomancy
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(setup.itemGroup);
             // register a new item here
+
             //================================================================================
             // Machines and Materials
             //================================================================================
             event.getRegistry().register(new BlockItem(ModBlocks.ALLOYMIXER, properties).setRegistryName("alloymixer"));
+
+            event.getRegistry().register(new AllomancerPhial());
+            event.getRegistry().register(new AlcoholPhial());
+            event.getRegistry().register(new PhialAssembly());
+            event.getRegistry().register(new HopsSeeds());
+            event.getRegistry().register(new Hops());
+            event.getRegistry().register(new EmptyPhial());
+
+            //================================================================================
+            // Dusts
+            //================================================================================
+            event.getRegistry().register(new GoldDust());
+            event.getRegistry().register(new IronDust());
+            event.getRegistry().register(new ZincDust());
+            event.getRegistry().register(new TinDust());
+            event.getRegistry().register(new SteelDust());
+            event.getRegistry().register(new PewterDust());
+            event.getRegistry().register(new LeadDust());
+            event.getRegistry().register(new CopperDust());
+            event.getRegistry().register(new BronzeDust());
+            event.getRegistry().register(new BrassDust());
+            event.getRegistry().register(new AluminiumDust());
+            event.getRegistry().register(new FailDust());
 
             //================================================================================
             // Metal items

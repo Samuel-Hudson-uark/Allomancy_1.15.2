@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CXC",
+    "PTT",
+    "PAT"
+  ],
+  "key": {
+    "C": {
+      "tag": "forge:ingots/copper"
+    },
+    "X": {
+      "item": "allomancy:phialassembly"
+    },
+    "P": {
+      "item": "allomancy:emptyphial"
+    },
+    "T": {
+      "tag": "forge:ingots/tin"
+    },
+    "A": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "item": "allomancy:alloymixer"
+  }
+}
