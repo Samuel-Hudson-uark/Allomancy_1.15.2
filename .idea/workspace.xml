@@ -19,32 +19,1348 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/experimental" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:experimental" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Added sprites for tin">
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/tinblock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/tinore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinaxe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinboots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinchestplate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinhelmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinhoe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tiningot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinleggings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinnugget.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinpickaxe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinshovel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/tinsword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/tin_layer_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/tin_layer_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-2.log.gz" afterDir="false" />
+    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Fixed a very minor bug">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_55_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_55_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_56_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_56_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/AluminiumBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/AluminiumOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/AtiumBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/AtiumOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/BrassBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/BrassOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/BronzeBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/BronzeOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/CopperBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/CopperOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/LeadBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/LeadOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/LerasiumBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/LerasiumOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ModBlocks.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/PewterBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/PewterOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/SteelBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/SteelOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/TinBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/TinOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ZincBlock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ZincOre.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ArmorMaterialList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ModItems.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ToolMaterialList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/aluminium/AluminiumSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/atium/AtiumSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/brass/BrassSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzePickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/bronze/BronzeSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/copper/CopperSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lead/LeadSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/lerasium/LerasiumSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/pewter/PewterSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/steel/SteelSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/tin/TinSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincAxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincBoots.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincChestplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincHelmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincHoe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincIngot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincLeggings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincNugget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincPickaxe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincShovel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/zinc/ZincSword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ClientProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/IProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ModSetup$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ModSetup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ServerProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/createMcpToSrg/output.tsrg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/downloadMCMeta/version.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/downloadMcpConfig/output.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/extractSrg/output.srg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/META-INF/INDEX.LIST" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/META-INF/versions/9/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL32.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/OpenAL32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/SAPIWrapper_x64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/SAPIWrapper_x86.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw32.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/glfw32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc32.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/jemalloc32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl32.dll.git" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_opengl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_opengl.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_opengl32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_opengl32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_stb.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_stb.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_stb32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_stb32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_tinyfd.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_tinyfd.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_tinyfd32.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/natives/lwjgl_tinyfd32.dll.sha1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/brassore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/bronzeore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/copperblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/copperore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/pewterore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/steelore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/lang/en_us.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/brassore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/bronzeore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/copperblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/copperore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/pewterore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/steelore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/atiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brasschestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brasshelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brasshoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brasspickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brasssword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzechestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzehelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzehoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzenugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzepickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzeshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzesword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/coppernugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/coppershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/coppersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leadsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/lerasiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewteraxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewteringot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewternugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewtershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewtersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steelsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zinchelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zinchoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/aluminiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/aluminiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/atiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/atiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/brassblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/bronzeblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/copperblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/copperore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/leadblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/leadore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/lerasiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/lerasiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/pewterblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/steelblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/zincblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/block/zincore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/aluminiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/atiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brasschestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brasshelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brasshoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brasspickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brassshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/brasssword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzeaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzeboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzechestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzehelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzehoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzeingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzeleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzenugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzepickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzeshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/bronzesword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/coppernugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/copperpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/coppershovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/coppersword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/leadsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/lerasiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewteraxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewteringot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewternugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewterpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewtershovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/pewtersword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/steelsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zinchelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zinchoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/zincsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/aluminium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/aluminium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/atium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/atium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/brass_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/brass_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/bronze_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/bronze_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/lead_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/lead_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/lerasium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/lerasium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/pewter_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/pewter_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/steel_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/steel_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/zinc_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/models/armor/zinc_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/brassore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/bronzeore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/copperblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/copperore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/pewterore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/steelore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/aluminiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atium_ore_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/atiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brass_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brass_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brass_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brass_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brass_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brassaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brassboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brasschestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brasshelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brasshoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brassingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brassleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brasspickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brassshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/brasssword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronze_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronze_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronze_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronze_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronze_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzeaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzeboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzechestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzehelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzehoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzeingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzeleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzepickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzeshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/bronzesword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copper_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copper_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copper_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copper_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copper_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/copperpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/coppershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/coppersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lead_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lead_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lead_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lead_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lead_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/leadsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasium_ore_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/lerasiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewter_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewter_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewter_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewter_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewter_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewteraxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewteringot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewterpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewtershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/pewtersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steel_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steel_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steel_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steel_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steel_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/steelsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinc_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinc_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinc_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinc_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinc_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinchelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zinchoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/zincsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/ores/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/blocks/storage_blocks/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ingots/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/nuggets/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/ores/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/copper.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/data/forge/tags/items/storage_blocks/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-13-10.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-13-8.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-13-9.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-14-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/AluminiumBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/AluminiumOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/AtiumBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/AtiumOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/BrassBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/BronzeBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/LeadBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/LeadOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/LerasiumBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/LerasiumOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/PewterBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/SteelBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ZincBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ZincOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/aluminium/AluminiumSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/atium/AtiumSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/brass/BrassSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzePickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/bronze/BronzeSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lead/LeadSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/lerasium/LerasiumSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/pewter/PewterSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/steel/SteelSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincAxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincBoots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincChestplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincHelmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincHoe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincIngot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincLeggings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincNugget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincPickaxe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincShovel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/zinc/ZincSword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/atiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brasschestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brasshelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brasshoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brasspickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brasssword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzechestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzehelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzehoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzenugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzepickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzeshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzesword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leadsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/lerasiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewteraxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewteringot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewternugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewtershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewtersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steelsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zinchelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zinchoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincnugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/aluminiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/aluminiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/atiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/atiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/brassblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/bronzeblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/leadblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/leadore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/lerasiumblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/lerasiumore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/pewterblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/steelblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/zincblock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/zincore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/aluminiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/atiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brasschestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brasshelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brasshoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brasspickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brassshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/brasssword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzeaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzeboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzechestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzehelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzehoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzeingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzeleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzenugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzepickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzeshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/bronzesword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/leadsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/lerasiumsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewteraxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewteringot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewternugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewterpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewtershovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/pewtersword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelhelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelhoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/steelsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincboots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincchestplate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zinchelmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zinchoe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincingot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincleggings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincnugget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincpickaxe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincshovel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/zincsword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/aluminium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/aluminium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/atium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/atium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/brass_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/brass_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/bronze_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/bronze_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/lead_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/lead_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/lerasium_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/lerasium_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/pewter_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/pewter_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/steel_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/steel_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/zinc_layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/models/armor/zinc_layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/aluminiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/aluminiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/atiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/atiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/brassblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/bronzeblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/leadblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/leadore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/lerasiumblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/lerasiumore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/pewterblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/steelblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/zincblock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/zincore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/aluminiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atium_ore_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/atiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brass_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brass_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brass_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brass_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brass_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brassaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brassboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brasschestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brasshelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brasshoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brassleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brasspickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brassshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/brasssword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronze_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronze_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronze_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronze_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronze_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzeaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzeboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzechestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzehelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzehoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzeleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzepickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzeshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/bronzesword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lead_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lead_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lead_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lead_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lead_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/leadsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasium_ore_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/lerasiumsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewter_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewter_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewter_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewter_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewter_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewteraxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewterpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewtershovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/pewtersword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steel_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steel_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steel_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steel_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steel_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelhelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelhoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/steelsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinc_block_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinc_ingot_from_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinc_ingot_from_nugget.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinc_nugget_from_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinc_nugget_from_smelting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincboots.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincchestplate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinchelmet.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zinchoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincleggings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincpickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincshovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/zincsword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/ores/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/blocks/storage_blocks/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ingots/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/nuggets/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/ores/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/aluminium.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/brass.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/bronze.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/lead.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/pewter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/steel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/forge/tags/items/storage_blocks/zinc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinblock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinore.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/tinore.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generate_material_1.15.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_material_1.15.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-14-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-14-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -52,6 +1368,7 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" afterDir="false" />
@@ -63,9 +1380,13 @@
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/tinblock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/tinblock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/tinore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/tinore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/iron_ore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ArmorMaterialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ToolMaterialList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,10 +1460,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -246,7 +1567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594757024364</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed a very minor bug">
+      <created>1594758229314</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594758229314</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +1588,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/experimental" />
+                        <option value="experimental" />
                       </list>
                     </value>
                   </entry>
@@ -280,9 +1608,14 @@
     <MESSAGE value="Added copper tools, armor, nugget, block, and associated recipes" />
     <MESSAGE value="Fixed bugs from class generation" />
     <MESSAGE value="Added sprites for tin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sprites for tin" />
+    <MESSAGE value="Fixed a very minor bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a very minor bug" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="114" key="#Project_Structure" timestamp="1594758361109">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1594758361109" />
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594619884675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -295,42 +1628,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594682128644" />
-    <state width="938" height="363" key="GridCell.Tab.0.bottom" timestamp="1594757893579">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594774709588">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893579" />
-    <state width="938" height="363" key="GridCell.Tab.0.center" timestamp="1594757893579">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594774709588" />
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1594774594037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893579" />
-    <state width="938" height="363" key="GridCell.Tab.0.left" timestamp="1594757893579">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594774594037" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1594774594037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893579" />
-    <state width="938" height="363" key="GridCell.Tab.0.right" timestamp="1594757893579">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594774594037" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1594774594037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893579" />
-    <state width="938" height="363" key="GridCell.Tab.1.bottom" timestamp="1594757893580">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594774594037" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1594774594037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893580" />
-    <state width="938" height="363" key="GridCell.Tab.1.center" timestamp="1594757893580">
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594774594037" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1594771219741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893580" />
-    <state width="938" height="363" key="GridCell.Tab.1.left" timestamp="1594757893580">
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594771219741" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1594771219741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893580" />
-    <state width="938" height="363" key="GridCell.Tab.1.right" timestamp="1594757893580">
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594771219741" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1594771219741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="938" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594757893580" />
-    <state x="440" y="114" key="SettingsEditor" timestamp="1594752856394">
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594771219741" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1594771219741">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1594752856394" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594771219741" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1594758391475">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1594758391475" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1594688627893">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -339,17 +1676,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1594757008128" />
-    <state x="667" y="273" width="585" height="592" key="find.popup" timestamp="1594753771668">
+    <state x="987" y="264" width="585" height="592" key="find.popup" timestamp="1594770867164">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="667" y="273" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594753771668" />
+    <state x="987" y="264" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594770867164" />
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594752976995">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594752976995" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594753738934">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594770516580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594753738934" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594770516580" />
   </component>
 </project>

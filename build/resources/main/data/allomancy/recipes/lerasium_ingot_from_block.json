@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "allomancy:lerasiumblock"
+    }
+  ],
+  "result": {
+    "item": "allomancy:lerasiumingot",
+    "count": 9
+  }
+}

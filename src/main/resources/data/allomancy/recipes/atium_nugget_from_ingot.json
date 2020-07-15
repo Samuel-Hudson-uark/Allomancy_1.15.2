@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "allomancy:atiumingot"
+    }
+  ],
+  "result": {
+    "item": "allomancy:atiumnugget",
+    "count": 9
+  }
+}

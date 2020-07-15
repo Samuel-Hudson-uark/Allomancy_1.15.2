@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:zincpickaxe"
+    },
+    {
+      "item": "allomancy:zincshovel"
+    },
+    {
+      "item": "allomancy:zincaxe"
+    },
+    {
+      "item": "allomancy:zinchoe"
+    },
+    {
+      "item": "allomancy:zincsword"
+    },
+    {
+      "item": "allomancy:zinchelmet"
+    },
+    {
+      "item": "allomancy:zincchestplate"
+    },
+    {
+      "item": "allomancy:zincleggings"
+    },
+    {
+      "item": "allomancy:zincboots"
+    }
+  ],
+  "result": "allomancy:zincnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

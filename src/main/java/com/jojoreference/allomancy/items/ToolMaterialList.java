@@ -7,7 +7,16 @@ import net.minecraft.item.crafting.Ingredient;
 public enum ToolMaterialList implements IItemTier {
 
     CopperTier(2.0f, 5.0f, 250, 2, 14, ModItems.COPPERINGOT),
-    TinTier(2.0f, 4.0f, 170, 1, 8, ModItems.TININGOT);
+    TinTier(2.0f, 4.0f, 170, 1, 8, ModItems.TININGOT),
+    LeadTier(2.0f, 5.0f, 250, 2, 14, ModItems.LEADINGOT),
+    AluminiumTier(2.0f, 5.0f, 250, 2, 14, ModItems.ALUMINIUMINGOT),
+    AtiumTier(2.0f, 5.0f, 250, 2, 14, ModItems.ATIUMINGOT),
+    BrassTier(2.0f, 5.0f, 250, 2, 14, ModItems.BRASSINGOT),
+    BronzeTier(2.0f, 5.0f, 250, 2, 14, ModItems.BRONZEINGOT),
+    LerasiumTier(2.0f, 5.0f, 250, 2, 14, ModItems.LERASIUMINGOT),
+    PewterTier(2.0f, 5.0f, 250, 2, 14, ModItems.PEWTERINGOT),
+    SteelTier(2.0f, 5.0f, 250, 2, 14, ModItems.STEELINGOT),
+    ZincTier(2.0f, 5.0f, 250, 2, 14, ModItems.ZINCINGOT);
 
     private float attackDamage, efficiency;
     private int durability, harvestLevel, enchantability;

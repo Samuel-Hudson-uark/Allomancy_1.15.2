@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:atiumpickaxe"
+    },
+    {
+      "item": "allomancy:atiumshovel"
+    },
+    {
+      "item": "allomancy:atiumaxe"
+    },
+    {
+      "item": "allomancy:atiumhoe"
+    },
+    {
+      "item": "allomancy:atiumsword"
+    },
+    {
+      "item": "allomancy:atiumhelmet"
+    },
+    {
+      "item": "allomancy:atiumchestplate"
+    },
+    {
+      "item": "allomancy:atiumleggings"
+    },
+    {
+      "item": "allomancy:atiumboots"
+    }
+  ],
+  "result": "allomancy:atiumnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

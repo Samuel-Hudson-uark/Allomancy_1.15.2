@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:aluminiumpickaxe"
+    },
+    {
+      "item": "allomancy:aluminiumshovel"
+    },
+    {
+      "item": "allomancy:aluminiumaxe"
+    },
+    {
+      "item": "allomancy:aluminiumhoe"
+    },
+    {
+      "item": "allomancy:aluminiumsword"
+    },
+    {
+      "item": "allomancy:aluminiumhelmet"
+    },
+    {
+      "item": "allomancy:aluminiumchestplate"
+    },
+    {
+      "item": "allomancy:aluminiumleggings"
+    },
+    {
+      "item": "allomancy:aluminiumboots"
+    }
+  ],
+  "result": "allomancy:aluminiumnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

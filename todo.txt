@@ -1,0 +1,16 @@
+
+TODO:
+Metals to add:
+Iron (in game already)
+Gold (in game already)
+Steel (alloy)
+Tin (done)
+Pewter (alloy)
+Bronze (alloy)
+Copper (done)
+Zinc
+Brass (alloy)
+Aluminium
+Lead
+Atium
+Lerasium

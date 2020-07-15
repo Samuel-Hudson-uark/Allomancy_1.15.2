@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:lerasiumpickaxe"
+    },
+    {
+      "item": "allomancy:lerasiumshovel"
+    },
+    {
+      "item": "allomancy:lerasiumaxe"
+    },
+    {
+      "item": "allomancy:lerasiumhoe"
+    },
+    {
+      "item": "allomancy:lerasiumsword"
+    },
+    {
+      "item": "allomancy:lerasiumhelmet"
+    },
+    {
+      "item": "allomancy:lerasiumchestplate"
+    },
+    {
+      "item": "allomancy:lerasiumleggings"
+    },
+    {
+      "item": "allomancy:lerasiumboots"
+    }
+  ],
+  "result": "allomancy:lerasiumnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

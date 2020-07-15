@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "allomancy:brasspickaxe"
+    },
+    {
+      "item": "allomancy:brassshovel"
+    },
+    {
+      "item": "allomancy:brassaxe"
+    },
+    {
+      "item": "allomancy:brasshoe"
+    },
+    {
+      "item": "allomancy:brasssword"
+    },
+    {
+      "item": "allomancy:brasshelmet"
+    },
+    {
+      "item": "allomancy:brasschestplate"
+    },
+    {
+      "item": "allomancy:brassleggings"
+    },
+    {
+      "item": "allomancy:brassboots"
+    }
+  ],
+  "result": "allomancy:brassnugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

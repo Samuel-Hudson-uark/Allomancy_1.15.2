@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "allomancy:block/bronzeore",
+    "all": "allomancy:block/bronzeore"
+  }
+}

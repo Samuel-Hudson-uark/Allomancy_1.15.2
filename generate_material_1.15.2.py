@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-material = 'Tin'
+material = 'Lerasium'
 hasore = True
 sworddamage = 8
 
@@ -152,6 +152,8 @@ public class {0}Nugget extends Item {{
 with open('./src/main/java/com/jojoreference/allomancy/Allomancy.java', 'r') as f:
     file = f.read()
 if file.find(material) == -1:
+    file = file.replace("import com.jojoreference.allomancy.items.copper.*;", """import com.jojoreference.allomancy.items.copper.*;
+import com.jojoreference.allomancy.items.{}.*;""".format(material.lower()))
     file = file.replace("event.getRegistry().register(new CopperBlock());", 
 """event.getRegistry().register(new CopperBlock());
 
