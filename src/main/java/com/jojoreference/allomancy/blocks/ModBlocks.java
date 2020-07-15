@@ -3,6 +3,7 @@ package com.jojoreference.allomancy.blocks;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -13,6 +14,9 @@ public class ModBlocks {
 
     @ObjectHolder("allomancy:alloymixer")
     public static TileEntityType<AlloyMixerTile> ALLOYMIXER_TILE;
+
+    @ObjectHolder("allomancy:alloymixer")
+    public static ContainerType<AlloyMixerContainer> ALLOYMIXER_CONTAINER;
     //ores and blocks
     @ObjectHolder("allomancy:copperore")
     public static CopperOre COPPERORE;

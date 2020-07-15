@@ -26,8 +26,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Added alloy mixer. Currently, it's a block with sides and a tile entity.">
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/gui/alloymixer_gui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-15_11.24.35-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-15_11.39.57-client.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/gui/alloymixer_gui.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ModBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/IProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/IProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ServerProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ServerProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/IProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/IProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ServerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ServerProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +131,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="broken" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,15 +157,15 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\textures\block" />
-      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\recipes" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\models\item" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\models\block" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\textures\block" />
+      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -281,46 +330,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="673" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594678720739" />
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1594786364379">
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1594827537976">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594786364379" />
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594827537976" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594774709588">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594774709588" />
-    <state width="916" height="356" key="GridCell.Tab.0.bottom" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.0.bottom" timestamp="1594831812582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.0.center" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812582" />
+    <state width="916" height="362" key="GridCell.Tab.0.center" timestamp="1594831812581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.0.left" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812581" />
+    <state width="916" height="362" key="GridCell.Tab.0.left" timestamp="1594831812581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.0.right" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812581" />
+    <state width="916" height="362" key="GridCell.Tab.0.right" timestamp="1594831812582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.1.bottom" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812582" />
+    <state width="916" height="362" key="GridCell.Tab.1.bottom" timestamp="1594831812437">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.1.center" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812437" />
+    <state width="916" height="362" key="GridCell.Tab.1.center" timestamp="1594831812436">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.1.left" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812436" />
+    <state width="916" height="362" key="GridCell.Tab.1.left" timestamp="1594831812436">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
-    <state width="916" height="356" key="GridCell.Tab.1.right" timestamp="1594788063717">
+    <state width="916" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812436" />
+    <state width="916" height="362" key="GridCell.Tab.1.right" timestamp="1594831812436">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="356" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594788063717" />
+    <state width="916" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594831812436" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1594758391475">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
