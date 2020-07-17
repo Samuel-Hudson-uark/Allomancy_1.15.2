@@ -5,6 +5,7 @@
   "block.allomancy.alloymixer": "Alloy Mixer",
 
   "_comment": "Materials",
+  "item.allomancy.carbondust": "Carbon Dust",
   "item.allomancy.faildust": "Failed Alloy Dust",
   "item.allomancy.golddust": "Gold Dust",
   "item.allomancy.irondust": "Iron Dust",

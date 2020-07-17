@@ -118,6 +118,7 @@ public class Allomancy
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(setup.itemGroup);
             // register a new item here
+            event.getRegistry().register(new CarbonDust());
 
             //================================================================================
             // Machines and Materials
@@ -332,6 +333,9 @@ public class Allomancy
 
             event.getRegistry().register(new BlockItem(ModBlocks.TINORE, properties).setRegistryName("tinore"));
             event.getRegistry().register(new BlockItem(ModBlocks.TINBLOCK, properties).setRegistryName("tinblock"));
+
+
+
         }
     }
 }

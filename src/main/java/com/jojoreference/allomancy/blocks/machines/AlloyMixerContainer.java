@@ -2,10 +2,7 @@ package com.jojoreference.allomancy.blocks.machines;
 
 import com.jojoreference.allomancy.blocks.ModBlocks;
 import com.jojoreference.allomancy.items.ModItems;
-import com.jojoreference.allomancy.metal.CapabilityMetal;
-import com.jojoreference.allomancy.metal.IMetalStorage;
-import com.jojoreference.allomancy.metal.MetalStorage;
-import com.jojoreference.allomancy.metal.MetalStorageHandler;
+import com.jojoreference.allomancy.metal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -60,6 +57,10 @@ public class AlloyMixerContainer extends Container {
 
     public String getMetalName(int i) {
         return tileEntity.getCapability(CapabilityMetal.METAL).map(m -> m.GetMetalName(i)).orElse("None");
+    }
+
+    public int getMaxMetal(int i) {
+        return tileEntity.getCapability(CapabilityMetal.METAL).map(IMetalStorageHandler::GetMaxAmount).orElse(400);
     }
 
     @Override

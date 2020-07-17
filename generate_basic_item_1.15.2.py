@@ -1,7 +1,7 @@
 import os
 
 'Change this before running.'
-itemEnglishName = "Fail Dust"
+itemEnglishName = "Carbon Dust"
 
 itemClassName = itemEnglishName.replace(" ", "")
 itemName = itemClassName.lower()

@@ -5,18 +5,58 @@ import com.jojoreference.allomancy.items.atium.AtiumIngot;
 import com.jojoreference.allomancy.items.brass.BrassIngot;
 import com.jojoreference.allomancy.items.bronze.BronzeIngot;
 import com.jojoreference.allomancy.items.copper.CopperIngot;
-import com.jojoreference.allomancy.items.dusts.IronDust;
+import com.jojoreference.allomancy.items.dusts.*;
 import com.jojoreference.allomancy.items.lead.LeadIngot;
 import com.jojoreference.allomancy.items.lerasium.LerasiumIngot;
 import com.jojoreference.allomancy.items.pewter.PewterIngot;
 import com.jojoreference.allomancy.items.steel.SteelIngot;
 import com.jojoreference.allomancy.items.tin.TinIngot;
 import com.jojoreference.allomancy.items.zinc.ZincIngot;
+import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ModItems {
+
+    @ObjectHolder("allomancy:aluminiumdust")
+    public static AluminiumDust ALUMINIUMDUST;
+
+    @ObjectHolder("allomancy:brassdust")
+    public static BrassDust BRASSDUST;
+
+    @ObjectHolder("allomancy:bronzedust")
+    public static BronzeDust BRONZEDUST;
+
+    @ObjectHolder("allomancy:copperdust")
+    public static CopperDust COPPERDUST;
+
+    @ObjectHolder("allomancy:golddust")
+    public static GoldDust GOLDDUST;
+
     @ObjectHolder("allomancy:irondust")
     public static IronDust IRONDUST;
+
+    @ObjectHolder("allomancy:leaddust")
+    public static LeadDust LEADDUST;
+
+    @ObjectHolder("allomancy:pewterdust")
+    public static PewterDust PEWTERDUST;
+
+    @ObjectHolder("allomancy:steeldust")
+    public static SteelDust STEELDUST;
+
+    @ObjectHolder("allomancy:tindust")
+    public static TinDust TINDUST;
+
+    @ObjectHolder("allomancy:zincdust")
+    public static ZincDust ZINCDUST;
+
+    @ObjectHolder("allomancy:carbondust")
+    public static CarbonDust CARBONDUST;
 
     @ObjectHolder("allomancy:copperingot")
     public static CopperIngot COPPERINGOT;
