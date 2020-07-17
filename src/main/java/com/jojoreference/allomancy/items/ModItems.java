@@ -5,6 +5,7 @@ import com.jojoreference.allomancy.items.atium.AtiumIngot;
 import com.jojoreference.allomancy.items.brass.BrassIngot;
 import com.jojoreference.allomancy.items.bronze.BronzeIngot;
 import com.jojoreference.allomancy.items.copper.CopperIngot;
+import com.jojoreference.allomancy.items.dusts.IronDust;
 import com.jojoreference.allomancy.items.lead.LeadIngot;
 import com.jojoreference.allomancy.items.lerasium.LerasiumIngot;
 import com.jojoreference.allomancy.items.pewter.PewterIngot;
@@ -14,6 +15,9 @@ import com.jojoreference.allomancy.items.zinc.ZincIngot;
 import net.minecraftforge.registries.ObjectHolder;
 
 public class ModItems {
+    @ObjectHolder("allomancy:irondust")
+    public static IronDust IRONDUST;
+
     @ObjectHolder("allomancy:copperingot")
     public static CopperIngot COPPERINGOT;
 

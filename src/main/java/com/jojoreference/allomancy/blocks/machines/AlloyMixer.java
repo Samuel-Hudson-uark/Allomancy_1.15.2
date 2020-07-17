@@ -73,4 +73,6 @@ public class AlloyMixer extends Block {
         }
         return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
     }
+
+    
 }

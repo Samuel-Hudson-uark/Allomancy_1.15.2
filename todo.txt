@@ -2,7 +2,6 @@
 TODO:
 Metals have all been added, some of them need better sprites.
 
-Dusts of all metals
 *in progress: Alloy mixer: stores dusts, uses them to alloy or fill a bottle
 Automatic Lurcher: uses ironpulling to extract dust from metal (leaves stone)
 Hammer: hammers ingots and ores into dust

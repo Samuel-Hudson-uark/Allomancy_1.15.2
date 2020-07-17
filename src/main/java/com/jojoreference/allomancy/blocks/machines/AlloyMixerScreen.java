@@ -1,19 +1,28 @@
 package com.jojoreference.allomancy.blocks.machines;
 
 import com.jojoreference.allomancy.Allomancy;
-import com.mojang.blaze3d.platform.GlStateManager;
+import com.jojoreference.allomancy.blocks.ModBlocks;
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.Container;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraftforge.fml.client.gui.GuiUtils;
 
 public class AlloyMixerScreen extends ContainerScreen<AlloyMixerContainer> {
 
+    public static final int WIDTH = 180;
+    public static final int HEIGHT = 202;
+
     private ResourceLocation GUI = new ResourceLocation(Allomancy.MODID, "textures/gui/alloymixer_gui.png");
+    private ResourceLocation GUIBottle = new ResourceLocation(Allomancy.MODID, "textures/gui/bottle_gui.png");
+
     public AlloyMixerScreen(AlloyMixerContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
-        super(screenContainer, inv, titleIn);
+        super(screenContainer, inv, ModBlocks.ALLOYMIXER.getNameTextComponent());
+        this.xSize = WIDTH;
+        this.ySize = HEIGHT;
+
     }
 
     @Override
@@ -27,6 +36,14 @@ public class AlloyMixerScreen extends ContainerScreen<AlloyMixerContainer> {
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
         this.font.drawString(this.title.getFormattedText(), 8.0f, 6.0f, 4210752);
         this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0f, (float)(this.ySize -96 + 2), 4210752);
+        int metalAmount = container.getMetalAmount(0);
+        if(metalAmount > 0) {
+            drawString(Minecraft.getInstance().fontRenderer, container.getMetalName(0) + ": " + metalAmount, 10, 90, 0xffffff);
+        }
+        this.minecraft.getTextureManager().bindTexture(GUI);
+        GuiUtils.drawTexturedModalRect(21, 17, 181, 4, 12, 32, 0);
+        this.font.drawString(String.format("%1$4s", "10%"), 30, 91, 4210752);
+        this.font.drawString("90%", 127, 91, 4210752);
     }
 
     @Override

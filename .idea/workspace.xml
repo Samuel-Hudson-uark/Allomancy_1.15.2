@@ -25,94 +25,62 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Added a GUI for the Alloy Mixer">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/AluminiumOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/AtiumOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/CopperOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/LeadOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/LerasiumOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/TinOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ores/ZincOre.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/AluminiumBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/AtiumBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/BrassBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/BronzeBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/CopperBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/LeadBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/LerasiumBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/PewterBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/SteelBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/TinBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/storage_blocks/ZincBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/alcoholphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/allomancerphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/aluminiumdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/brassdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/bronzedust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/copperdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/emptyphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/faildust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/golddust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/hops.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/hopsseeds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/irondust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/leaddust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/pewterdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/phialassembly.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/steeldust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/tindust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/zincdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/alloymixer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/emptyphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/phialassembly.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_basic_item_1.15.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-07-15_10.12.18-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/AlcoholPhial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/AllomancerPhial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/EmptyPhial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/Hops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/HopsSeeds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/PhialAssembly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/AluminiumDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/BrassDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/BronzeDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/CopperDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/FailDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/GoldDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/IronDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/LeadDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/PewterDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/SteelDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/TinDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/dusts/ZincDust.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/alcoholphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/allomancerphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/aluminiumdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/brassdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/bronzedust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/copperdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/emptyphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/faildust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/golddust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/hops.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/hopsseeds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/irondust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/leaddust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/pewterdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/phialassembly.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/steeldust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/tindust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/zincdust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/alloymixer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/emptyphial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/phialassembly.json" afterDir="false" />
+    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Made a script to add arbitrary basic items. Added some crafting materials, and dusts.">
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/gui/bottle_gui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/item/irondust.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-10.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-11.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-12.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-13.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-14.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-15.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-17.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-19.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-20.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-21.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-22.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-23.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-24.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-25.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-26.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-27.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-28.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-29.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-31.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-32.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-33.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-8.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-9.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-10.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-11.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-12.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-13.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-14.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-15.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-17.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-18.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-19.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-20.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-21.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-3.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-4.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-5.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-6.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-7.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-8.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-9.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/metal/CapabilityMetal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/metal/IMetalStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/metal/IMetalStorageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/metal/MetalStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/metal/MetalStorageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/gui/bottle_gui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/item/irondust.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
@@ -123,13 +91,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ModItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/gui/alloymixer_gui.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/gui/alloymixer_gui.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/alloymixer.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/alloymixer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/emptyphial.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/emptyphial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-1.log.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-15-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-15-7.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -149,8 +125,14 @@
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/AlloyMixerTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/gui/alloymixer_gui.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/gui/alloymixer_gui.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/alloymixer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/alloymixer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +178,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -231,18 +213,19 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\textures\block" />
-      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jojoreference.allomancy.items.dusts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\recipes" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\models\item" />
       <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\models\block" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jojoreference.allomancy.metal" />
+      <recent name="com.jojoreference.allomancy.items.dusts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\assets\allomancy\textures\block" />
+      <recent name="C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\main\resources\data\allomancy\loot_tables\blocks" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -362,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594831968850</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made a script to add arbitrary basic items. Added some crafting materials, and dusts.">
+      <created>1594848922581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594848922581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -400,7 +390,8 @@
     <MESSAGE value="Added steel, pewter, bronze, zinc, brass, aluminium, lead, and the two god metals. All with WIP sprites." />
     <MESSAGE value="Added alloy mixer. Currently, it's a block with sides and a tile entity." />
     <MESSAGE value="Added a GUI for the Alloy Mixer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a GUI for the Alloy Mixer" />
+    <MESSAGE value="Made a script to add arbitrary basic items. Added some crafting materials, and dusts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a script to add arbitrary basic items. Added some crafting materials, and dusts." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="114" key="#Project_Structure" timestamp="1594758361109">
@@ -415,46 +406,46 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="673" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594678720739" />
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1594827537976">
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1594952839616">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594827537976" />
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594774709588">
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594952839616" />
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594873706698">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594774709588" />
-    <state width="1877" height="358" key="GridCell.Tab.0.bottom" timestamp="1594848530302">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594873706698" />
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1594953592190">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="358" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594848530302" />
-    <state width="1877" height="358" key="GridCell.Tab.0.center" timestamp="1594848530302">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592190" />
+    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1594953592190">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="358" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594848530302" />
-    <state width="1877" height="358" key="GridCell.Tab.0.left" timestamp="1594848530301">
+    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592190" />
+    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1594953592190">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="358" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594848530301" />
-    <state width="1877" height="358" key="GridCell.Tab.0.right" timestamp="1594848530302">
+    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592190" />
+    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1594953592190">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="358" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594848530302" />
-    <state width="916" height="362" key="GridCell.Tab.1.bottom" timestamp="1594831984805">
+    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592190" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1594953592007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594831984805" />
-    <state width="916" height="362" key="GridCell.Tab.1.center" timestamp="1594831984805">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592007" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1594953592007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="362" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594831984805" />
-    <state width="916" height="362" key="GridCell.Tab.1.left" timestamp="1594831984805">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592007" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1594953592007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="362" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594831984805" />
-    <state width="916" height="362" key="GridCell.Tab.1.right" timestamp="1594831984805">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592007" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1594953592007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="916" height="362" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594831984805" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594953592007" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1594758391475">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -467,17 +458,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="769" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1594757008128" />
-    <state x="987" y="264" width="585" height="592" key="find.popup" timestamp="1594770867164">
+    <state x="1047" y="263" width="585" height="592" key="find.popup" timestamp="1594944839201">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="987" y="264" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594770867164" />
+    <state x="1047" y="263" width="585" height="592" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594944839201" />
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594752976995">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="676" y="252" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1594752976995" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594848232866">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1594952397183">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594848232866" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594952397183" />
   </component>
 </project>
