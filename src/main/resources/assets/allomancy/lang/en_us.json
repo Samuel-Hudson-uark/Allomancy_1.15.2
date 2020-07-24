@@ -1,10 +1,17 @@
 {
+  "_comment": "Tooltips",
+  "allomancy.empty": "Empty",
+
   "_comment": "Creative Tabs",
   "itemGroup.allomancy": "Allomancy",
 
+  "_comment": "Machines",
   "block.allomancy.alloymixer": "Alloy Mixer",
+  "block.allomancy.melter": "Metal Melter",
 
   "_comment": "Materials",
+  "item.allomancy.moltenironbucket": "Bucket of Molten Iron",
+  "item.allomancy.crucible": "Crucible",
   "item.allomancy.carbondust": "Carbon Dust",
   "item.allomancy.faildust": "Failed Alloy Dust",
   "item.allomancy.golddust": "Gold Dust",

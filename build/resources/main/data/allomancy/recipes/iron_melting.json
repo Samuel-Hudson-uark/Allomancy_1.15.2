@@ -1,0 +1,9 @@
+{
+  "type": "allomancy:melter_recipe",
+  "input": {
+    "tag": "forge:ingots/iron"
+  },
+  "outputFluidAmount": 144,
+  "outputFluid": "minecraft:lava",
+  "burnTime": 200
+}

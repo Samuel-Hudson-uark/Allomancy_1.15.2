@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": {"model": "allomancy:block/melter"},
+    "facing=south": {"model": "allomancy:block/melter", "y": 180},
+    "facing=west": {"model": "allomancy:block/melter", "y": 270},
+    "facing=east": {"model": "allomancy:block/melter", "y": 90},
+    "facing=up": {"model": "allomancy:block/melter", "x": -90},
+    "facing=down": {"model": "allomancy:block/melter", "x": 90}
+  }
+}

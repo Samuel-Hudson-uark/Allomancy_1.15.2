@@ -17,6 +17,16 @@ public class ModBlocks {
 
     @ObjectHolder("allomancy:alloymixer")
     public static ContainerType<AlloyMixerContainer> ALLOYMIXER_CONTAINER;
+
+    @ObjectHolder("allomancy:melter")
+    public static Melter MELTER;
+
+    @ObjectHolder("allomancy:melter")
+    public static TileEntityType<MelterTile> MELTER_TILE;
+
+    @ObjectHolder("allomancy:melter")
+    public static ContainerType<MelterContainer> MELTER_CONTAINER;
+
     //ores and blocks
     @ObjectHolder("allomancy:copperore")
     public static CopperOre COPPERORE;

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "allomancy:block/melter_side",
+    "down": "allomancy:block/melter_bottom",
+    "up": "allomancy:block/melter_top",
+    "east": "allomancy:block/melter_side",
+    "west": "allomancy:block/melter_side",
+    "north": "allomancy:block/melter_side",
+    "south": "allomancy:block/melter_side"
+  }
+}

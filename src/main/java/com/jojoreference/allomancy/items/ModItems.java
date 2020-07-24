@@ -22,6 +22,9 @@ import java.util.List;
 
 public class ModItems {
 
+    @ObjectHolder("allomancy:moltenironbucket")
+    public static MoltenIronBucket MOLTENIRONBUCKET;
+
     @ObjectHolder("allomancy:aluminiumdust")
     public static AluminiumDust ALUMINIUMDUST;
 

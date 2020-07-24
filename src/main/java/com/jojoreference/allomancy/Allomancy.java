@@ -4,6 +4,7 @@ import com.jojoreference.allomancy.blocks.*;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
+import com.jojoreference.allomancy.fluids.MoltenIron;
 import com.jojoreference.allomancy.items.copper.*;
 import com.jojoreference.allomancy.items.lerasium.*;
 import com.jojoreference.allomancy.items.atium.*;
@@ -17,15 +18,21 @@ import com.jojoreference.allomancy.items.lead.*;
 import com.jojoreference.allomancy.items.tin.*;
 import com.jojoreference.allomancy.items.*;
 import com.jojoreference.allomancy.items.dusts.*;
+import com.jojoreference.allomancy.recipes.MelterRecipe;
+import com.jojoreference.allomancy.recipes.MelterRecipeSerializer;
+import com.jojoreference.allomancy.recipes.RecipeTypeMelter;
 import com.jojoreference.allomancy.setup.ClientProxy;
 import com.jojoreference.allomancy.setup.IProxy;
 import com.jojoreference.allomancy.setup.ModSetup;
 import com.jojoreference.allomancy.setup.ServerProxy;
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipeSerializer;
+import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -35,11 +42,14 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("allomancy")
 public class Allomancy
 {
+    public static final IRecipeType<MelterRecipe> MELTER_RECIPE = new RecipeTypeMelter();
+
     public static final String MODID = "allomancy";
 
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
@@ -68,6 +78,7 @@ public class Allomancy
             // Machines
             //================================================================================
             event.getRegistry().register(new AlloyMixer());
+            event.getRegistry().register(new Melter());
 
             //================================================================================
             // Ores and Blocks
@@ -104,6 +115,8 @@ public class Allomancy
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
             event.getRegistry().register(TileEntityType.Builder.create(AlloyMixerTile::new, ModBlocks.ALLOYMIXER).build(null).setRegistryName("alloymixer"));
+            event.getRegistry().register(TileEntityType.Builder.create(MelterTile::new, ModBlocks.MELTER).build(null).setRegistryName("melter"));
+
         }
 
         @SubscribeEvent
@@ -112,18 +125,33 @@ public class Allomancy
                 BlockPos pos = data.readBlockPos();
                 return new AlloyMixerContainer(windowId, proxy.getClientWorld(), pos, inv, proxy.getClientPlayer());
             }).setRegistryName("alloymixer"));
+            event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
+                BlockPos pos = data.readBlockPos();
+                return new MelterContainer(windowId, proxy.getClientWorld(), pos, inv, proxy.getClientPlayer());
+            }).setRegistryName("melter"));
+        }
+
+        @SubscribeEvent
+        public static void onRegisterRecipeSerializers(final RegistryEvent.Register<IRecipeSerializer<?>> event) {
+            event.getRegistry().registerAll(
+                    new MelterRecipeSerializer()
+            );
         }
 
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(setup.itemGroup);
             // register a new item here
+            event.getRegistry().register(new MoltenIronBucket());
+
+            event.getRegistry().register(new Crucible());
             event.getRegistry().register(new CarbonDust());
 
             //================================================================================
             // Machines and Materials
             //================================================================================
             event.getRegistry().register(new BlockItem(ModBlocks.ALLOYMIXER, properties).setRegistryName("alloymixer"));
+            event.getRegistry().register(new BlockItem(ModBlocks.MELTER, properties).setRegistryName("melter"));
 
             event.getRegistry().register(new AllomancerPhial());
             event.getRegistry().register(new AlcoholPhial());
@@ -336,6 +364,11 @@ public class Allomancy
 
 
 
+        }
+
+        @SubscribeEvent
+        public static void onFluidsRegistry(final RegistryEvent.Register<Fluid> event) {
+            event.getRegistry().register(new MoltenIron().setRegistryName("molteniron"));
         }
     }
 }
