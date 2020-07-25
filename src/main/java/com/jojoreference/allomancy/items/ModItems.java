@@ -93,4 +93,21 @@ public class ModItems {
 
     @ObjectHolder("allomancy:lerasiumingot")
     public static LerasiumIngot LERASIUMINGOT;
+
+    public static List<Item> DUSTS;
+    static {
+        DUSTS = new ArrayList<>();
+        DUSTS.add(ALUMINIUMDUST);
+        DUSTS.add(BRASSDUST);
+        DUSTS.add(BRONZEDUST);
+        DUSTS.add(CARBONDUST);
+        DUSTS.add(COPPERDUST);
+        DUSTS.add(GOLDDUST);
+        DUSTS.add(IRONDUST);
+        DUSTS.add(PEWTERDUST);
+        DUSTS.add(LEADDUST);
+        DUSTS.add(STEELDUST);
+        DUSTS.add(TINDUST);
+        DUSTS.add(ZINCDUST);
+    }
 }

@@ -1,9 +1,11 @@
 package com.jojoreference.allomancy;
 
 import com.jojoreference.allomancy.blocks.*;
+import com.jojoreference.allomancy.blocks.fluidblocks.MoltenIronBlock;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
+import com.jojoreference.allomancy.fluids.ModFluids;
 import com.jojoreference.allomancy.fluids.MoltenIron;
 import com.jojoreference.allomancy.items.copper.*;
 import com.jojoreference.allomancy.items.lerasium.*;
@@ -42,7 +44,6 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.IForgeRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("allomancy")
@@ -79,6 +80,11 @@ public class Allomancy
             //================================================================================
             event.getRegistry().register(new AlloyMixer());
             event.getRegistry().register(new Melter());
+
+            //================================================================================
+            // Fluid Blocks
+            //================================================================================
+            event.getRegistry().register(new MoltenIronBlock());
 
             //================================================================================
             // Ores and Blocks
@@ -367,8 +373,9 @@ public class Allomancy
         }
 
         @SubscribeEvent
-        public static void onFluidsRegistry(final RegistryEvent.Register<Fluid> event) {
-            event.getRegistry().register(new MoltenIron().setRegistryName("molteniron"));
+        public static void registerFluids(final RegistryEvent.Register<Fluid> event) {
+            event.getRegistry().register(new MoltenIron.Flowing().setRegistryName("iron_flowing"));
+            event.getRegistry().register(new MoltenIron.Source().setRegistryName("iron_still"));
         }
     }
 }

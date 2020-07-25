@@ -1,5 +1,6 @@
 package com.jojoreference.allomancy.blocks.machines;
 
+import com.jojoreference.allomancy.items.ModItems;
 import com.jojoreference.allomancy.metal.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -30,7 +31,9 @@ import static com.jojoreference.allomancy.blocks.ModBlocks.ALLOYMIXER_TILE;
 public class AlloyMixerTile extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
 
     private LazyOptional<IItemHandler> inputHandler = LazyOptional.of(this::createHandler);
+    private LazyOptional<IItemHandler> outputHandler = LazyOptional.of(this::createOutputHandler);
     private LazyOptional<IMetalStorageHandler> metalPhials = LazyOptional.of(this::createMetal);
+    private LazyOptional<IItemHandler> templateHandler = LazyOptional.of(this::createDustHandler);
 
     private int counter = 0;
     private final int metalPerDust = 100;
@@ -100,15 +103,32 @@ public class AlloyMixerTile extends TileEntity implements ITickableTileEntity, I
             //the below isn't necessary for slots that can accept any item
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-                return super.isItemValid(slot, stack);
-                //return stack.getItem() == some item
+                for(Item dust: ModItems.DUSTS) {
+                    if(dust == stack.getItem()) {return true;}
+                }
+                return false;
             }
+        };
+    }
 
+    private IItemHandler createOutputHandler() {
+        return new ItemStackHandler(1) {
             @Nonnull
             @Override
             public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
-                //if(stack.getItem() != some item {return stack;}
-                return super.insertItem(slot, stack, simulate);
+                return stack;
+            }
+        };
+    }
+
+    private IItemHandler createDustHandler() {
+        return new ItemStackHandler(2) {
+            @Override
+            public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
+                for(Item dust: ModItems.DUSTS) {
+                    if(dust == stack.getItem()) {return true;}
+                }
+                return false;
             }
         };
     }

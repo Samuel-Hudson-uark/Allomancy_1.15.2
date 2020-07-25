@@ -1,13 +1,21 @@
 package com.jojoreference.allomancy.items;
 
 import com.jojoreference.allomancy.Allomancy;
+import com.jojoreference.allomancy.fluids.ModFluids;
+import com.jojoreference.allomancy.fluids.MoltenIron;
+import com.jojoreference.allomancy.setup.ModSetup;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 
-public class MoltenIronBucket extends Item {
+import java.util.function.Supplier;
+
+public class MoltenIronBucket extends BucketItem {
+
     public MoltenIronBucket() {
-        super(new Item.Properties()
-        .maxStackSize(1)
-        .group(Allomancy.setup.itemGroup));
+        super(() -> ModFluids.IRON, new Item.Properties()
+                .maxStackSize(1)
+                .group(ModSetup.itemGroup));
         setRegistryName("moltenironbucket");
     }
 }

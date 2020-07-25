@@ -1,5 +1,6 @@
 package com.jojoreference.allomancy.blocks;
 
+import com.jojoreference.allomancy.blocks.fluidblocks.MoltenIronBlock;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
@@ -26,6 +27,10 @@ public class ModBlocks {
 
     @ObjectHolder("allomancy:melter")
     public static ContainerType<MelterContainer> MELTER_CONTAINER;
+
+    //fluids
+    @ObjectHolder("allomancy:molteniron")
+    public static MoltenIronBlock MOLTEN_IRON_BLOCK;
 
     //ores and blocks
     @ObjectHolder("allomancy:copperore")

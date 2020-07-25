@@ -3,11 +3,11 @@
   <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.minecraftforge.userdev.LaunchTesting"/>
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
-    <option name="PROGRAM_PARAMETERS" value="--mod examplemod --all --output C:\Users\trifo\Documents\Github\Allomancy_1.15.2\src\generated\resources"/>
+    <option name="PROGRAM_PARAMETERS" value="--mod allomancy --all --output C:\Users\super\OneDrive\Documents\GitHub\Allomancy_1.15.2\src\generated\resources"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
     <module name="Allomancy_1.15.2.main"/>
     <envs>
-      <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
+      <env name="MOD_CLASSES" value="allomancy%%$PROJECT_DIR$\build\resources\main;allomancy%%$PROJECT_DIR$\build\classes\java\main"/>
       <env name="MCP_MAPPINGS" value="snapshot_20200514-1.15.1"/>
       <env name="MCP_VERSION" value="20200515.085601"/>
       <env name="FORGE_VERSION" value="31.2.0"/>

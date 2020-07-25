@@ -1,26 +1,16 @@
 package com.jojoreference.allomancy.fluids;
 
-import net.minecraft.fluid.FlowingFluid;
+import com.jojoreference.allomancy.Allomancy;
 import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.IFluidState;
-import net.minecraft.fluid.LavaFluid;
-import net.minecraft.util.registry.Registry;
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.tags.Tag;
+import net.minecraft.util.ResourceLocation;
 
 public class ModFluids {
-    public static final FlowingFluid FLOWING_IRON = register("flowing_iron", new MoltenIron.Flowing());
-    public static final FlowingFluid IRON = register("iron", new MoltenIron.Source());
+    public static MoltenIron.Source IRON = (MoltenIron.Source) new MoltenIron.Source().setRegistryName("iron_still");
+    public static MoltenIron.Flowing FLOWING_IRON = (MoltenIron.Flowing) new MoltenIron.Flowing().setRegistryName("iron_flowing");
 
-    private static <T extends Fluid> T register(String key, T p_215710_1_) {
-        return Registry.register(Registry.FLUID, key, p_215710_1_);
-    }
-
-    static {
-        for(Fluid fluid : Registry.FLUID) {
-            for(IFluidState ifluidstate : fluid.getStateContainer().getValidStates()) {
-                Fluid.STATE_REGISTRY.add(ifluidstate);
-            }
-        }
-
+    public static class Tags {
+        public static final Tag<Fluid> MOLTENIRON = new FluidTags.Wrapper(ResourceLocation.create("allomancy:molteniron", ':'));
     }
 }
