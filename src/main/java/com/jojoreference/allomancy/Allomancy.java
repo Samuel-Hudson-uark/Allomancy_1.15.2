@@ -36,6 +36,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
@@ -374,8 +375,8 @@ public class Allomancy
 
         @SubscribeEvent
         public static void registerFluids(final RegistryEvent.Register<Fluid> event) {
-            event.getRegistry().register(new MoltenIron.Flowing().setRegistryName("iron_flowing"));
-            event.getRegistry().register(new MoltenIron.Source().setRegistryName("iron_still"));
+            event.getRegistry().register(ModFluids.IRON);
+            event.getRegistry().register(ModFluids.FLOWING_IRON);
         }
     }
 }

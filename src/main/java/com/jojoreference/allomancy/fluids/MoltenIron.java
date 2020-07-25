@@ -82,8 +82,8 @@ public abstract class MoltenIron extends FlowingFluid {
 
     @Override
     protected FluidAttributes createAttributes() {
-        return FluidAttributes.builder(ResourceLocation.create("allomancy:iron_still", ':'),
-                ResourceLocation.create("allomancy:iron_flowing", ':'))
+        return FluidAttributes.builder(new ResourceLocation("allomancy", "block/molteniron"),
+                new ResourceLocation("allomancy", "block/molteniron_flowing"))
                 .translationKey("block.allomancy.molteniron")
                 .build(this);
     }
