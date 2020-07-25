@@ -4,6 +4,6 @@
     "tag": "forge:ingots/iron"
   },
   "outputFluidAmount": 144,
-  "outputFluid": "minecraft:lava",
+  "outputFluid": "allomancy:molteniron",
   "burnTime": 200
 }

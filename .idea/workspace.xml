@@ -25,93 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="The alloy mixer can hold and display 8 different dusts now. The nbt data storing is bugged and won't save properly. Also added carbon dust.">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/Melter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterScreen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/AlcoholPhial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/AllomancerPhial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/EmptyPhial.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/Hops.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/HopsSeeds.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/PhialAssembly.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/AluminiumDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/BrassDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/BronzeDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/CarbonDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/CopperDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/FailDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/GoldDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/IronDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/LeadDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/PewterDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/SteelDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/TinDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/dusts/ZincDust.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/CapabilityMetal$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/CapabilityMetal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/IMetalStorage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/IMetalStorageHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/MetalStorage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/MetalStorageHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/metal/RecipeManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/blockstates/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/block/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/ladle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/models/item/moltenironbucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/textures/gui/melter_gui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/loot_tables/blocks/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/crucible.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/iron_melting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-15-30.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-24.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-26.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-27.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-28.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-40.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-16-41.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-23-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-23-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-23-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-23-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-14.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/Melter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/ModFluids.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/MoltenIron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/Crucible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/MoltenIronBucket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/recipes/MelterRecipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/recipes/MelterRecipeSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/recipes/RecipeTypeMelter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/blockstates/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/carbondust.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/ladle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/item/moltenironbucket.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/gui/melter_gui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/loot_tables/blocks/melter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/crucible.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/iron_melting.json" afterDir="false" />
+    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Added Melter and attempted to add molten iron fluid">
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-15.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-17.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-18.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-19.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-20.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-21.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2020-07-24-22.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/util/CapabilityCustomFurnace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
@@ -120,54 +43,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_55_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_55_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_56_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_7_14_2020_1_56_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ModBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/ModBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/items/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/setup/ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/blocks/machines/MelterTile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/allomancy/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_basic_item_1.15.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_basic_item_1.15.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-10.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-11.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-12.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-13.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-14.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-15.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-15.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-16.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-16.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-17.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-17.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-18.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-18.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-19.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-19.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-20.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-20.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-21.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-21.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-22.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-22.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-23.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-23.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-25.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-25.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-29.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-29.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-30.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-30.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-31.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-31.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-32.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-32.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-33.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-33.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-34.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-34.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-35.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-35.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-36.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-36.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-37.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-37.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-38.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-38.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-39.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-39.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-7.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-8.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-16-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-16-9.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/iron_melting.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/data/allomancy/recipes/iron_melting.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-10.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-10.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-11.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-11.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-12.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-12.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-13.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-13.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-14.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-14.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-8.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-8.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-24-9.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-24-9.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -175,7 +71,6 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" afterDir="false" />
@@ -187,11 +82,13 @@
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/items/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/setup/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/machines/MelterTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/ModFluids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/ModFluids.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/MoltenIron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/MoltenIron.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/iron_melting.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/recipes/iron_melting.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595018241366</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added Melter and attempted to add molten iron fluid">
+      <created>1595628055713</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595628055713</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,7 +376,8 @@
     <MESSAGE value="Made a script to add arbitrary basic items. Added some crafting materials, and dusts." />
     <MESSAGE value="Why does this work, please God someone come down here and tell me what I did wrong here because I have absolutly zero confidence in this." />
     <MESSAGE value="The alloy mixer can hold and display 8 different dusts now. The nbt data storing is bugged and won't save properly. Also added carbon dust." />
-    <option name="LAST_COMMIT_MESSAGE" value="The alloy mixer can hold and display 8 different dusts now. The nbt data storing is bugged and won't save properly. Also added carbon dust." />
+    <MESSAGE value="Added Melter and attempted to add molten iron fluid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Melter and attempted to add molten iron fluid" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="114" key="#Project_Structure" timestamp="1594758361109">
@@ -487,10 +392,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="673" y="341" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594678720739" />
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1595627916929">
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1595634289718">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627916929" />
+    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595634289718" />
     <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1594952839616" />
     <state x="817" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595613776672">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -512,45 +417,45 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="707" y="374" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595565972417" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1595637165012">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165012" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1595637165012">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165012" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1595637165012">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165012" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1595637165012">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165012" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1595637165013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165013" />
     <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1595637165013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165013" />
     <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1595637165013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165013" />
     <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1595627940977">
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1595637165013">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627940977" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595637165013" />
     <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1594758391475">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -577,10 +482,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="755" y="287" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595612097465" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1595627876836">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1595633607589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595627876836" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595633607589" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1594952397183" />
   </component>
 </project>

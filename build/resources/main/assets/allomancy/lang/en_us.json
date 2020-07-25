@@ -9,6 +9,9 @@
   "block.allomancy.alloymixer": "Alloy Mixer",
   "block.allomancy.melter": "Metal Melter",
 
+  "_comment": "Fluids",
+  "fluid.allomancy.molteniron": "Molten Iron",
+
   "_comment": "Materials",
   "item.allomancy.moltenironbucket": "Bucket of Molten Iron",
   "item.allomancy.crucible": "Crucible",

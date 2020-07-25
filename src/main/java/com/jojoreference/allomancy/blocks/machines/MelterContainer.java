@@ -3,6 +3,7 @@ package com.jojoreference.allomancy.blocks.machines;
 import com.jojoreference.allomancy.blocks.ModBlocks;
 import com.jojoreference.allomancy.metal.CapabilityMetal;
 import com.jojoreference.allomancy.metal.IMetalStorageHandler;
+import com.jojoreference.allomancy.util.CapabilityCustomFurnace;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -13,6 +14,7 @@ import net.minecraft.util.IWorldPosCallable;
 import net.minecraft.util.IntArray;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -43,6 +45,26 @@ public class MelterContainer extends Container {
         //x and y match first light gray pixel of inventory slot.
         layoutPlayerInventorySlots(8, 84);
 
+    }
+
+    public String getFluidName() {
+        return tileEntity.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY).map(f ->
+                f.getFluidInTank(0).getDisplayName().getFormattedText()).orElse("Empty");
+    }
+
+    public int getFluidAmount() {
+        return tileEntity.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY).map(f ->
+                f.getFluidInTank(0).getAmount()).orElse(0);
+    }
+
+    public float getBurnTimeRatio() {
+        return tileEntity.getCapability(CapabilityCustomFurnace.CUSTOM_FURNACE_CAPABILITY).map(c ->
+                (float)c.get(0)/(float)c.get(1)).orElse(0f);
+    }
+
+    public float getProcessingTimeRatio() {
+        return tileEntity.getCapability(CapabilityCustomFurnace.CUSTOM_FURNACE_CAPABILITY).map(c ->
+                1f-((float)c.get(2)/(float)c.get(3))).orElse(0f);
     }
 
     @Override
