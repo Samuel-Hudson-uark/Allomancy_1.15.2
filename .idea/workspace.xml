@@ -20,62 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:experimental" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Added gui functionality to melter">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runClient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runData.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runData.xml" afterDir="false" />
+    <list default="true" id="d8712b8f-cd60-4966-bc60-d08516b9fec9" name="Default Changelist" comment="Tweaked the fluid a bit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy$RegistryEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/jojoreference/allomancy/Allomancy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/createSrgToMcp/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/extractSrg/output.srg" beforeDir="false" afterPath="$PROJECT_DIR$/build/extractSrg/output.srg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/pack.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-25-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-25-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-25-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-25-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-07-25-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-07-25-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-2.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-2.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-2.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.-2.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/Mod Testing World/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/Allomancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/fluidblocks/MoltenIronBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/blocks/fluidblocks/MoltenIronBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/ModFluids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/ModFluids.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/MoltenIron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jojoreference/allomancy/fluids/MoltenIron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/molteniron.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/models/block/molteniron.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/iron_flowing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/molteniron_flowing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/iron_flowing.png.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/molteniron_flowing.png.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/iron_still.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/molteniron.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/iron_still.png.mcmeta" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/allomancy/textures/block/molteniron.png.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data/allomancy/tags/fluids/molteniron.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/allomancy/tags/fluids/molteniron.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +88,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="broken" />
+        <entry key="$PROJECT_DIR$" value="experimental" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -355,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595628055713</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Tweaked the fluid a bit">
+      <created>1595698838258</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595698838258</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +328,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/experimental" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -397,7 +356,8 @@
     <MESSAGE value="Why does this work, please God someone come down here and tell me what I did wrong here because I have absolutly zero confidence in this." />
     <MESSAGE value="The alloy mixer can hold and display 8 different dusts now. The nbt data storing is bugged and won't save properly. Also added carbon dust." />
     <MESSAGE value="Added Melter and attempted to add molten iron fluid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Melter and attempted to add molten iron fluid" />
+    <MESSAGE value="Tweaked the fluid a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tweaked the fluid a bit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="114" key="#Project_Structure" timestamp="1594758361109">
@@ -452,53 +412,57 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595693632509" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1595698218583">
+    <state x="452" y="223" key="Git.Interactive.Rebase.Dialog" timestamp="1595698966839">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="452" y="223" key="Git.Interactive.Rebase.Dialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698966839" />
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1595698812138">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218583" />
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812138" />
     <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1595698218583">
+    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1595698812138">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218583" />
+    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812138" />
     <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1595698218583">
+    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1595698812138">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218583" />
+    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812138" />
     <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1595698218583">
+    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1595698812138">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218583" />
+    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812138" />
     <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1595698218420">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1595698812139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218420" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812139" />
     <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1595698218420">
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1595698812139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218420" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812139" />
     <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1595698218420">
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1595698812138">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218420" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812138" />
     <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1595698218420">
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1595698812139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1595654691543" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698218420" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595698812139" />
     <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1594960027642" />
     <state x="299" y="81" key="RollbackChangesDialog" timestamp="1595649021621">
       <screen x="0" y="0" width="1280" height="720" />
@@ -509,9 +473,10 @@
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595695118432" />
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1594758391475" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1595018274309">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1595699000017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1595699000017" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1595018274309" />
     <state x="769" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594757008128">
       <screen x="0" y="0" width="1920" height="1080" />

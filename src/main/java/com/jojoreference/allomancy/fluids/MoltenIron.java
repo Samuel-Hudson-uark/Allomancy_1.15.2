@@ -18,7 +18,13 @@ import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.common.Mod;
 
-public abstract class MoltenIron extends FlowingFluid {
+public abstract class MoltenIron extends ForgeFlowingFluid {
+
+    protected MoltenIron() {
+        super(new Properties(Source::new, Flowing::new, FluidAttributes.builder(
+                new ResourceLocation("allomancy", "block/molteniron"),
+                new ResourceLocation("allomancy", "block/molteniron_flowing"))));
+    }
 
     @Override
     public Fluid getFlowingFluid() {
