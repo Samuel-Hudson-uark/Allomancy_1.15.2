@@ -40,13 +40,13 @@ import static com.jojoreference.allomancy.blocks.ModBlocks.MELTER_TILE;
 public class MelterTile extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
 
     public ItemStackHandler handler = createHandler();
-    private final LazyOptional<IItemHandler> itemHandler = LazyOptional.of(() -> handler);
+    private LazyOptional<IItemHandler> itemHandler = LazyOptional.of(() -> handler);
 
     public FluidTank tank = new FluidTank(FluidAttributes.BUCKET_VOLUME);
-    private final LazyOptional<IFluidHandler> fluidHandler = LazyOptional.of(() -> tank);
+    private LazyOptional<IFluidHandler> fluidHandler = LazyOptional.of(() -> tank);
 
     public IntArray customFurnaceStats = new IntArray(4);
-    private final LazyOptional<IIntArray> customFurnaceStatsHandler = LazyOptional.of(() -> customFurnaceStats);
+    private LazyOptional<IIntArray> customFurnaceStatsHandler = LazyOptional.of(() -> customFurnaceStats);
 
     public int burnTime = 0;
     public int totalBurnTime = 1;

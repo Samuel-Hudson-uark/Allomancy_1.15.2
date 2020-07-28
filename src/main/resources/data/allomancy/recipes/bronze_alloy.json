@@ -1,0 +1,8 @@
+{
+  "type": "allomancy:alloy_recipe",
+  "inputFluid_1": "allomancy:molteniron",
+  "inputFluid_2": "minecraft:lava",
+  "ratioTop": 60,
+  "ratioBottom": 40,
+  "outputFluid": "minecraft:water"
+}

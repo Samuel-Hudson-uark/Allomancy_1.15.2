@@ -15,6 +15,7 @@ import net.minecraft.util.IntArray;
 import net.minecraft.util.IntReferenceHolder;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fluids.capability.CapabilityFluidHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -31,36 +32,20 @@ public class AlloyMixerContainer extends Container {
     public AlloyMixerContainer(int id, World world, BlockPos pos, PlayerInventory playerInventory, PlayerEntity player) {
         super(ALLOYMIXER_CONTAINER, id);
         tileEntity = world.getTileEntity(pos);
-        tileEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY);
+        tileEntity.getCapability(CapabilityFluidHandler.FLUID_HANDLER_CAPABILITY);
         this.playerEntity = player;
         this.playerInventory = new InvWrapper(playerInventory);
 
         tileEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(h -> {
             //Position of item slot for the alloy mixer. Will have to change x and y to match the GUI.
             //x and y match first light gray pixel of inventory slot.
-            for(int i = 0; i < 8; i++) {
-                addSlot(new SlotItemHandler(h, i, 19 + 18*i, 53));
-            }
+            addSlot(new SlotItemHandler(h, 0, 19, 53));
 
         });
         //Position of player's inventory. Change leftcol and toprow if I edit the GUI.
         //x and y match first light gray pixel of inventory slot.
         layoutPlayerInventorySlots(10, 120);
 
-        trackIntArray(tileEntity.getCapability(CapabilityMetal.METAL).map(m -> m.MakeArray()).orElse(new IntArray(8)));
-
-    }
-
-    public int getMetalAmount(int i) {
-        return tileEntity.getCapability(CapabilityMetal.METAL).map(m -> m.GetAmount(i)).orElse(0);
-    }
-
-    public String getMetalName(int i) {
-        return tileEntity.getCapability(CapabilityMetal.METAL).map(m -> m.GetMetalName(i)).orElse("None");
-    }
-
-    public int getMaxMetal(int i) {
-        return tileEntity.getCapability(CapabilityMetal.METAL).map(IMetalStorageHandler::GetMaxAmount).orElse(400);
     }
 
     @Override

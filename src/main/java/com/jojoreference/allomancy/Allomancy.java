@@ -1,70 +1,76 @@
 package com.jojoreference.allomancy;
 
-import com.jojoreference.allomancy.blocks.*;
+import com.jojoreference.allomancy.blocks.ModBlocks;
 import com.jojoreference.allomancy.blocks.fluidblocks.MoltenIronBlock;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
-import com.jojoreference.allomancy.capabilities.*;
+import com.jojoreference.allomancy.capabilities.Mistborn;
+import com.jojoreference.allomancy.capabilities.MistbornProvider;
+import com.jojoreference.allomancy.entity.CopperClipEntity;
+import com.jojoreference.allomancy.entity.CopperClipRenderer;
+import com.jojoreference.allomancy.entity.ModEntities;
 import com.jojoreference.allomancy.fluids.ModFluids;
-import com.jojoreference.allomancy.fluids.MoltenIron;
-import com.jojoreference.allomancy.items.copper.*;
-import com.jojoreference.allomancy.items.lerasium.*;
-import com.jojoreference.allomancy.items.atium.*;
+import com.jojoreference.allomancy.items.*;
 import com.jojoreference.allomancy.items.aluminium.*;
+import com.jojoreference.allomancy.items.atium.*;
 import com.jojoreference.allomancy.items.brass.*;
-import com.jojoreference.allomancy.items.zinc.*;
 import com.jojoreference.allomancy.items.bronze.*;
+import com.jojoreference.allomancy.items.copper.*;
+import com.jojoreference.allomancy.items.dusts.*;
+import com.jojoreference.allomancy.items.lead.*;
+import com.jojoreference.allomancy.items.lerasium.*;
 import com.jojoreference.allomancy.items.pewter.*;
 import com.jojoreference.allomancy.items.steel.*;
-import com.jojoreference.allomancy.items.lead.*;
 import com.jojoreference.allomancy.items.tin.*;
-import com.jojoreference.allomancy.items.*;
-import com.jojoreference.allomancy.items.dusts.*;
-import com.jojoreference.allomancy.recipes.MelterRecipe;
-import com.jojoreference.allomancy.recipes.MelterRecipeSerializer;
-import com.jojoreference.allomancy.recipes.RecipeTypeMelter;
+import com.jojoreference.allomancy.items.zinc.*;
+import com.jojoreference.allomancy.recipes.*;
 import com.jojoreference.allomancy.setup.ClientProxy;
 import com.jojoreference.allomancy.setup.IProxy;
 import com.jojoreference.allomancy.setup.ModSetup;
 import com.jojoreference.allomancy.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemTier;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("allomancy")
 public class Allomancy
 {
-    public static final IRecipeType<MelterRecipe> MELTER_RECIPE = new RecipeTypeMelter();
-
     public static final String MODID = "allomancy";
 
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
     public static ModSetup setup = new ModSetup();
+
+    public static final IRecipeType<MelterRecipe> MELTER_RECIPE = new RecipeTypeMelter();
+    public static final IRecipeType<AlloyRecipe> ALLOY_RECIPE = new RecipeTypeAlloy();
 
     public Allomancy() {
         // Register the setup method for modloading
@@ -159,6 +165,17 @@ public class Allomancy
             event.getRegistry().register(TileEntityType.Builder.create(MelterTile::new, ModBlocks.MELTER).build(null).setRegistryName("melter"));
 
         }
+        @SubscribeEvent
+        public static void onEntityRegistry(final RegistryEvent.Register<EntityType<?>> event) {
+            event.getRegistry().registerAll(
+                    ModEntities.COPPERCLIP_ENTITY = (EntityType<CopperClipEntity>) EntityType.Builder.<CopperClipEntity>create(CopperClipEntity::new, EntityClassification.MISC).size(1f, 1f).setCustomClientFactory((spawnEntity, world) -> new CopperClipEntity(world)).build("allomancy:copperclip").setRegistryName("allomancy:copperclip")
+            );
+        }
+
+        @SubscribeEvent
+        public static void clientRegistries(FMLClientSetupEvent event) {
+            RenderingRegistry.registerEntityRenderingHandler(ModEntities.COPPERCLIP_ENTITY, new CopperClipRenderer.Factory());
+        }
 
         @SubscribeEvent
         public static void onContainerRegistry(final RegistryEvent.Register<ContainerType<?>> event) {
@@ -175,233 +192,238 @@ public class Allomancy
         @SubscribeEvent
         public static void onRegisterRecipeSerializers(final RegistryEvent.Register<IRecipeSerializer<?>> event) {
             event.getRegistry().registerAll(
-                    new MelterRecipeSerializer()
+                    new MelterRecipeSerializer(),
+                    new AlloyRecipeSerializer()
             );
         }
 
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             Item.Properties properties = new Item.Properties().group(setup.itemGroup);
-            // register a new item here
-            event.getRegistry().register(new MoltenIronBucket());
-
-            event.getRegistry().register(new Crucible());
-            event.getRegistry().register(new CarbonDust());
-
             //================================================================================
             // Machines and Materials
             //================================================================================
-            event.getRegistry().register(new BlockItem(ModBlocks.ALLOYMIXER, properties).setRegistryName("alloymixer"));
-            event.getRegistry().register(new BlockItem(ModBlocks.MELTER, properties).setRegistryName("melter"));
+            event.getRegistry().registerAll(
+                    new BlockItem(ModBlocks.ALLOYMIXER, properties).setRegistryName("alloymixer"),
+            new BlockItem(ModBlocks.MELTER, properties).setRegistryName("melter"),
 
-            event.getRegistry().register(new AllomancerPhial());
-            event.getRegistry().register(new AlcoholPhial());
-            event.getRegistry().register(new PhialAssembly());
-            event.getRegistry().register(new HopsSeeds());
-            event.getRegistry().register(new Hops());
-            event.getRegistry().register(new EmptyPhial());
-
+            new AllomancerPhial(),
+            new AlcoholPhial(),
+            new PhialAssembly(),
+            new HopsSeeds(),
+            new Hops(),
+            new EmptyPhial(),
+            new CopperClip(),
             //================================================================================
             // Dusts
             //================================================================================
-            event.getRegistry().register(new GoldDust());
-            event.getRegistry().register(new IronDust());
-            event.getRegistry().register(new ZincDust());
-            event.getRegistry().register(new TinDust());
-            event.getRegistry().register(new SteelDust());
-            event.getRegistry().register(new PewterDust());
-            event.getRegistry().register(new LeadDust());
-            event.getRegistry().register(new CopperDust());
-            event.getRegistry().register(new BronzeDust());
-            event.getRegistry().register(new BrassDust());
-            event.getRegistry().register(new AluminiumDust());
-            event.getRegistry().register(new FailDust());
-
+            new CarbonDust(),
+            new GoldDust(),
+            new IronDust(),
+            new ZincDust(),
+            new TinDust(),
+            new SteelDust(),
+            new PewterDust(),
+            new LeadDust(),
+            new CopperDust(),
+            new BronzeDust(),
+            new BrassDust(),
+            new AluminiumDust(),
+            new FailDust(),
+            //================================================================================
+            // Tools
+            //================================================================================
+            new Crucible(),
+            new MoltenIronBucket(),
+            new DiamondDuelingPickaxe(ItemTier.DIAMOND, 0, 0, setup.itemGroup),
+            new DiamondDuelingSword(ItemTier.DIAMOND, 7, 1.6f, setup.itemGroup),
             //================================================================================
             // Metal items
             //================================================================================
-            event.getRegistry().register(new CopperIngot());
-            event.getRegistry().register(new CopperNugget());
+            new CopperIngot(),
+            new CopperNugget(),
 
-            event.getRegistry().register(new CopperSword(ToolMaterialList.CopperTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new CopperAxe(ToolMaterialList.CopperTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new CopperPickaxe(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new CopperShovel(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new CopperHoe(ToolMaterialList.CopperTier, 0, setup.itemGroup));
+            new CopperSword(ToolMaterialList.CopperTier, 8, -3.1f, setup.itemGroup),
+            new CopperAxe(ToolMaterialList.CopperTier, 8, -3.1f, setup.itemGroup),
+            new CopperPickaxe(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup),
+            new CopperShovel(ToolMaterialList.CopperTier, 0, 0, setup.itemGroup),
+            new CopperHoe(ToolMaterialList.CopperTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new CopperHelmet(ArmorMaterialList.CopperTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new CopperChestplate(ArmorMaterialList.CopperTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new CopperLeggings(ArmorMaterialList.CopperTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new CopperBoots(ArmorMaterialList.CopperTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new CopperHelmet(ArmorMaterialList.CopperTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new CopperChestplate(ArmorMaterialList.CopperTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new CopperLeggings(ArmorMaterialList.CopperTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new CopperBoots(ArmorMaterialList.CopperTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.COPPERORE, properties).setRegistryName("copperore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.COPPERBLOCK, properties).setRegistryName("copperblock"));
+            new BlockItem(ModBlocks.COPPERORE, properties).setRegistryName("copperore"),
+            new BlockItem(ModBlocks.COPPERBLOCK, properties).setRegistryName("copperblock"),
 
-            event.getRegistry().register(new LerasiumIngot());
-            event.getRegistry().register(new LerasiumNugget());
+            new LerasiumIngot(),
+            new LerasiumNugget(),
 
-            event.getRegistry().register(new LerasiumSword(ToolMaterialList.LerasiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new LerasiumAxe(ToolMaterialList.LerasiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new LerasiumPickaxe(ToolMaterialList.LerasiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new LerasiumShovel(ToolMaterialList.LerasiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new LerasiumHoe(ToolMaterialList.LerasiumTier, 0, setup.itemGroup));
+            new LerasiumSword(ToolMaterialList.LerasiumTier, 8, -3.1f, setup.itemGroup),
+            new LerasiumAxe(ToolMaterialList.LerasiumTier, 8, -3.1f, setup.itemGroup),
+            new LerasiumPickaxe(ToolMaterialList.LerasiumTier, 0, 0, setup.itemGroup),
+            new LerasiumShovel(ToolMaterialList.LerasiumTier, 0, 0, setup.itemGroup),
+            new LerasiumHoe(ToolMaterialList.LerasiumTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new LerasiumHelmet(ArmorMaterialList.LerasiumTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new LerasiumChestplate(ArmorMaterialList.LerasiumTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new LerasiumLeggings(ArmorMaterialList.LerasiumTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new LerasiumBoots(ArmorMaterialList.LerasiumTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new LerasiumHelmet(ArmorMaterialList.LerasiumTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new LerasiumChestplate(ArmorMaterialList.LerasiumTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new LerasiumLeggings(ArmorMaterialList.LerasiumTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new LerasiumBoots(ArmorMaterialList.LerasiumTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.LERASIUMORE, properties).setRegistryName("lerasiumore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.LERASIUMBLOCK, properties).setRegistryName("lerasiumblock"));
+            new BlockItem(ModBlocks.LERASIUMORE, properties).setRegistryName("lerasiumore"),
+            new BlockItem(ModBlocks.LERASIUMBLOCK, properties).setRegistryName("lerasiumblock"),
 
-            event.getRegistry().register(new AtiumIngot());
-            event.getRegistry().register(new AtiumNugget());
+            new AtiumIngot(),
+            new AtiumNugget(),
 
-            event.getRegistry().register(new AtiumSword(ToolMaterialList.AtiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new AtiumAxe(ToolMaterialList.AtiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new AtiumPickaxe(ToolMaterialList.AtiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new AtiumShovel(ToolMaterialList.AtiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new AtiumHoe(ToolMaterialList.AtiumTier, 0, setup.itemGroup));
+            new AtiumSword(ToolMaterialList.AtiumTier, 8, -3.1f, setup.itemGroup),
+            new AtiumAxe(ToolMaterialList.AtiumTier, 8, -3.1f, setup.itemGroup),
+            new AtiumPickaxe(ToolMaterialList.AtiumTier, 0, 0, setup.itemGroup),
+            new AtiumShovel(ToolMaterialList.AtiumTier, 0, 0, setup.itemGroup),
+            new AtiumHoe(ToolMaterialList.AtiumTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new AtiumHelmet(ArmorMaterialList.AtiumTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new AtiumChestplate(ArmorMaterialList.AtiumTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new AtiumLeggings(ArmorMaterialList.AtiumTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new AtiumBoots(ArmorMaterialList.AtiumTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new AtiumHelmet(ArmorMaterialList.AtiumTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new AtiumChestplate(ArmorMaterialList.AtiumTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new AtiumLeggings(ArmorMaterialList.AtiumTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new AtiumBoots(ArmorMaterialList.AtiumTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.ATIUMORE, properties).setRegistryName("atiumore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.ATIUMBLOCK, properties).setRegistryName("atiumblock"));
+            new BlockItem(ModBlocks.ATIUMORE, properties).setRegistryName("atiumore"),
+            new BlockItem(ModBlocks.ATIUMBLOCK, properties).setRegistryName("atiumblock"),
 
-            event.getRegistry().register(new AluminiumIngot());
-            event.getRegistry().register(new AluminiumNugget());
+            new AluminiumIngot(),
+            new AluminiumNugget(),
 
-            event.getRegistry().register(new AluminiumSword(ToolMaterialList.AluminiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new AluminiumAxe(ToolMaterialList.AluminiumTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new AluminiumPickaxe(ToolMaterialList.AluminiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new AluminiumShovel(ToolMaterialList.AluminiumTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new AluminiumHoe(ToolMaterialList.AluminiumTier, 0, setup.itemGroup));
+            new AluminiumSword(ToolMaterialList.AluminiumTier, 8, -3.1f, setup.itemGroup),
+            new AluminiumAxe(ToolMaterialList.AluminiumTier, 8, -3.1f, setup.itemGroup),
+            new AluminiumPickaxe(ToolMaterialList.AluminiumTier, 0, 0, setup.itemGroup),
+            new AluminiumShovel(ToolMaterialList.AluminiumTier, 0, 0, setup.itemGroup),
+            new AluminiumHoe(ToolMaterialList.AluminiumTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new AluminiumHelmet(ArmorMaterialList.AluminiumTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new AluminiumChestplate(ArmorMaterialList.AluminiumTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new AluminiumLeggings(ArmorMaterialList.AluminiumTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new AluminiumBoots(ArmorMaterialList.AluminiumTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new AluminiumHelmet(ArmorMaterialList.AluminiumTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new AluminiumChestplate(ArmorMaterialList.AluminiumTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new AluminiumLeggings(ArmorMaterialList.AluminiumTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new AluminiumBoots(ArmorMaterialList.AluminiumTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.ALUMINIUMORE, properties).setRegistryName("aluminiumore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.ALUMINIUMBLOCK, properties).setRegistryName("aluminiumblock"));
+            new BlockItem(ModBlocks.ALUMINIUMORE, properties).setRegistryName("aluminiumore"),
+            new BlockItem(ModBlocks.ALUMINIUMBLOCK, properties).setRegistryName("aluminiumblock"),
 
-            event.getRegistry().register(new BrassIngot());
-            event.getRegistry().register(new BrassNugget());
+            new BrassIngot(),
+            new BrassNugget(),
 
-            event.getRegistry().register(new BrassSword(ToolMaterialList.BrassTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new BrassAxe(ToolMaterialList.BrassTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new BrassPickaxe(ToolMaterialList.BrassTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new BrassShovel(ToolMaterialList.BrassTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new BrassHoe(ToolMaterialList.BrassTier, 0, setup.itemGroup));
+            new BrassSword(ToolMaterialList.BrassTier, 8, -3.1f, setup.itemGroup),
+            new BrassAxe(ToolMaterialList.BrassTier, 8, -3.1f, setup.itemGroup),
+            new BrassPickaxe(ToolMaterialList.BrassTier, 0, 0, setup.itemGroup),
+            new BrassShovel(ToolMaterialList.BrassTier, 0, 0, setup.itemGroup),
+            new BrassHoe(ToolMaterialList.BrassTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new BrassHelmet(ArmorMaterialList.BrassTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new BrassChestplate(ArmorMaterialList.BrassTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new BrassLeggings(ArmorMaterialList.BrassTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new BrassBoots(ArmorMaterialList.BrassTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new BrassHelmet(ArmorMaterialList.BrassTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new BrassChestplate(ArmorMaterialList.BrassTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new BrassLeggings(ArmorMaterialList.BrassTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new BrassBoots(ArmorMaterialList.BrassTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.BRASSBLOCK, properties).setRegistryName("brassblock"));
+            new BlockItem(ModBlocks.BRASSBLOCK, properties).setRegistryName("brassblock"),
 
-            event.getRegistry().register(new ZincIngot());
-            event.getRegistry().register(new ZincNugget());
+            new ZincIngot(),
+            new ZincNugget(),
 
-            event.getRegistry().register(new ZincSword(ToolMaterialList.ZincTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new ZincAxe(ToolMaterialList.ZincTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new ZincPickaxe(ToolMaterialList.ZincTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new ZincShovel(ToolMaterialList.ZincTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new ZincHoe(ToolMaterialList.ZincTier, 0, setup.itemGroup));
+            new ZincSword(ToolMaterialList.ZincTier, 8, -3.1f, setup.itemGroup),
+            new ZincAxe(ToolMaterialList.ZincTier, 8, -3.1f, setup.itemGroup),
+            new ZincPickaxe(ToolMaterialList.ZincTier, 0, 0, setup.itemGroup),
+            new ZincShovel(ToolMaterialList.ZincTier, 0, 0, setup.itemGroup),
+            new ZincHoe(ToolMaterialList.ZincTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new ZincHelmet(ArmorMaterialList.ZincTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new ZincChestplate(ArmorMaterialList.ZincTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new ZincLeggings(ArmorMaterialList.ZincTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new ZincBoots(ArmorMaterialList.ZincTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new ZincHelmet(ArmorMaterialList.ZincTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new ZincChestplate(ArmorMaterialList.ZincTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new ZincLeggings(ArmorMaterialList.ZincTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new ZincBoots(ArmorMaterialList.ZincTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.ZINCORE, properties).setRegistryName("zincore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.ZINCBLOCK, properties).setRegistryName("zincblock"));
+            new BlockItem(ModBlocks.ZINCORE, properties).setRegistryName("zincore"),
+            new BlockItem(ModBlocks.ZINCBLOCK, properties).setRegistryName("zincblock"),
 
-            event.getRegistry().register(new BronzeIngot());
-            event.getRegistry().register(new BronzeNugget());
+            new BronzeIngot(),
+            new BronzeNugget(),
 
-            event.getRegistry().register(new BronzeSword(ToolMaterialList.BronzeTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new BronzeAxe(ToolMaterialList.BronzeTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new BronzePickaxe(ToolMaterialList.BronzeTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new BronzeShovel(ToolMaterialList.BronzeTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new BronzeHoe(ToolMaterialList.BronzeTier, 0, setup.itemGroup));
+            new BronzeSword(ToolMaterialList.BronzeTier, 8, -3.1f, setup.itemGroup),
+            new BronzeAxe(ToolMaterialList.BronzeTier, 8, -3.1f, setup.itemGroup),
+            new BronzePickaxe(ToolMaterialList.BronzeTier, 0, 0, setup.itemGroup),
+            new BronzeShovel(ToolMaterialList.BronzeTier, 0, 0, setup.itemGroup),
+            new BronzeHoe(ToolMaterialList.BronzeTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new BronzeHelmet(ArmorMaterialList.BronzeTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new BronzeChestplate(ArmorMaterialList.BronzeTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new BronzeLeggings(ArmorMaterialList.BronzeTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new BronzeBoots(ArmorMaterialList.BronzeTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new BronzeHelmet(ArmorMaterialList.BronzeTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new BronzeChestplate(ArmorMaterialList.BronzeTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new BronzeLeggings(ArmorMaterialList.BronzeTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new BronzeBoots(ArmorMaterialList.BronzeTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.BRONZEBLOCK, properties).setRegistryName("bronzeblock"));
+            new BlockItem(ModBlocks.BRONZEBLOCK, properties).setRegistryName("bronzeblock"),
 
-            event.getRegistry().register(new PewterIngot());
-            event.getRegistry().register(new PewterNugget());
+            new PewterIngot(),
+            new PewterNugget(),
 
-            event.getRegistry().register(new PewterSword(ToolMaterialList.PewterTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new PewterAxe(ToolMaterialList.PewterTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new PewterPickaxe(ToolMaterialList.PewterTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new PewterShovel(ToolMaterialList.PewterTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new PewterHoe(ToolMaterialList.PewterTier, 0, setup.itemGroup));
+            new PewterSword(ToolMaterialList.PewterTier, 8, -3.1f, setup.itemGroup),
+            new PewterAxe(ToolMaterialList.PewterTier, 8, -3.1f, setup.itemGroup),
+            new PewterPickaxe(ToolMaterialList.PewterTier, 0, 0, setup.itemGroup),
+            new PewterShovel(ToolMaterialList.PewterTier, 0, 0, setup.itemGroup),
+            new PewterHoe(ToolMaterialList.PewterTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new PewterHelmet(ArmorMaterialList.PewterTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new PewterChestplate(ArmorMaterialList.PewterTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new PewterLeggings(ArmorMaterialList.PewterTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new PewterBoots(ArmorMaterialList.PewterTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new PewterHelmet(ArmorMaterialList.PewterTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new PewterChestplate(ArmorMaterialList.PewterTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new PewterLeggings(ArmorMaterialList.PewterTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new PewterBoots(ArmorMaterialList.PewterTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.PEWTERBLOCK, properties).setRegistryName("pewterblock"));
+            new BlockItem(ModBlocks.PEWTERBLOCK, properties).setRegistryName("pewterblock"),
 
-            event.getRegistry().register(new SteelIngot());
-            event.getRegistry().register(new SteelNugget());
+            new SteelIngot(),
+            new SteelNugget(),
 
-            event.getRegistry().register(new SteelSword(ToolMaterialList.SteelTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new SteelAxe(ToolMaterialList.SteelTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new SteelPickaxe(ToolMaterialList.SteelTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new SteelShovel(ToolMaterialList.SteelTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new SteelHoe(ToolMaterialList.SteelTier, 0, setup.itemGroup));
+            new SteelSword(ToolMaterialList.SteelTier, 8, -3.1f, setup.itemGroup),
+            new SteelAxe(ToolMaterialList.SteelTier, 8, -3.1f, setup.itemGroup),
+            new SteelPickaxe(ToolMaterialList.SteelTier, 0, 0, setup.itemGroup),
+            new SteelShovel(ToolMaterialList.SteelTier, 0, 0, setup.itemGroup),
+            new SteelHoe(ToolMaterialList.SteelTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new SteelHelmet(ArmorMaterialList.SteelTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new SteelChestplate(ArmorMaterialList.SteelTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new SteelLeggings(ArmorMaterialList.SteelTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new SteelBoots(ArmorMaterialList.SteelTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new SteelHelmet(ArmorMaterialList.SteelTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new SteelChestplate(ArmorMaterialList.SteelTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new SteelLeggings(ArmorMaterialList.SteelTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new SteelBoots(ArmorMaterialList.SteelTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.STEELBLOCK, properties).setRegistryName("steelblock"));
+            new BlockItem(ModBlocks.STEELBLOCK, properties).setRegistryName("steelblock"),
 
-            event.getRegistry().register(new LeadIngot());
-            event.getRegistry().register(new LeadNugget());
+            new LeadIngot(),
+            new LeadNugget(),
 
-            event.getRegistry().register(new LeadSword(ToolMaterialList.LeadTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new LeadAxe(ToolMaterialList.LeadTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new LeadPickaxe(ToolMaterialList.LeadTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new LeadShovel(ToolMaterialList.LeadTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new LeadHoe(ToolMaterialList.LeadTier, 0, setup.itemGroup));
+            new LeadSword(ToolMaterialList.LeadTier, 8, -3.1f, setup.itemGroup),
+            new LeadAxe(ToolMaterialList.LeadTier, 8, -3.1f, setup.itemGroup),
+            new LeadPickaxe(ToolMaterialList.LeadTier, 0, 0, setup.itemGroup),
+            new LeadShovel(ToolMaterialList.LeadTier, 0, 0, setup.itemGroup),
+            new LeadHoe(ToolMaterialList.LeadTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new LeadHelmet(ArmorMaterialList.LeadTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new LeadChestplate(ArmorMaterialList.LeadTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new LeadLeggings(ArmorMaterialList.LeadTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new LeadBoots(ArmorMaterialList.LeadTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new LeadHelmet(ArmorMaterialList.LeadTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new LeadChestplate(ArmorMaterialList.LeadTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new LeadLeggings(ArmorMaterialList.LeadTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new LeadBoots(ArmorMaterialList.LeadTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.LEADORE, properties).setRegistryName("leadore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.LEADBLOCK, properties).setRegistryName("leadblock"));
+            new BlockItem(ModBlocks.LEADORE, properties).setRegistryName("leadore"),
+            new BlockItem(ModBlocks.LEADBLOCK, properties).setRegistryName("leadblock"),
 
-            event.getRegistry().register(new TinIngot());
-            event.getRegistry().register(new TinNugget());
+            new TinIngot(),
+            new TinNugget(),
 
-            event.getRegistry().register(new TinSword(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new TinAxe(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup));
-            event.getRegistry().register(new TinPickaxe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new TinShovel(ToolMaterialList.TinTier, 0, 0, setup.itemGroup));
-            event.getRegistry().register(new TinHoe(ToolMaterialList.TinTier, 0, setup.itemGroup));
+            new TinSword(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup),
+            new TinAxe(ToolMaterialList.TinTier, 8, -3.1f, setup.itemGroup),
+            new TinPickaxe(ToolMaterialList.TinTier, 0, 0, setup.itemGroup),
+            new TinShovel(ToolMaterialList.TinTier, 0, 0, setup.itemGroup),
+            new TinHoe(ToolMaterialList.TinTier, 0, setup.itemGroup),
 
-            event.getRegistry().register(new TinHelmet(ArmorMaterialList.TinTier, EquipmentSlotType.HEAD, setup.itemGroup));
-            event.getRegistry().register(new TinChestplate(ArmorMaterialList.TinTier, EquipmentSlotType.CHEST, setup.itemGroup));
-            event.getRegistry().register(new TinLeggings(ArmorMaterialList.TinTier, EquipmentSlotType.LEGS, setup.itemGroup));
-            event.getRegistry().register(new TinBoots(ArmorMaterialList.TinTier, EquipmentSlotType.FEET, setup.itemGroup));
+            new TinHelmet(ArmorMaterialList.TinTier, EquipmentSlotType.HEAD, setup.itemGroup),
+            new TinChestplate(ArmorMaterialList.TinTier, EquipmentSlotType.CHEST, setup.itemGroup),
+            new TinLeggings(ArmorMaterialList.TinTier, EquipmentSlotType.LEGS, setup.itemGroup),
+            new TinBoots(ArmorMaterialList.TinTier, EquipmentSlotType.FEET, setup.itemGroup),
 
-            event.getRegistry().register(new BlockItem(ModBlocks.TINORE, properties).setRegistryName("tinore"));
-            event.getRegistry().register(new BlockItem(ModBlocks.TINBLOCK, properties).setRegistryName("tinblock"));
+            new BlockItem(ModBlocks.TINORE, properties).setRegistryName("tinore"),
+            new BlockItem(ModBlocks.TINBLOCK, properties).setRegistryName("tinblock")
+            );
+
 
 
 

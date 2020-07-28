@@ -22,9 +22,18 @@ import java.util.List;
 
 public class ModItems {
 
+    @ObjectHolder("allomancy:copperclip")
+    public static CopperClip COPPERCLIP;
+    
+    @ObjectHolder("allomancy:diamondduelingpickaxe")
+    public static DiamondDuelingPickaxe DIAMONDDUELINGPICKAXE;
+
+    @ObjectHolder("allomancy:diamondduelingsword")
+    public static DiamondDuelingSword DIAMONDDUELINGSWORD;
+
     @ObjectHolder("allomancy:emptyphial")
     public static EmptyPhial EMPTYPHIAL;
-    
+
     @ObjectHolder("allomancy:moltenironbucket")
     public static MoltenIronBucket MOLTENIRONBUCKET;
 

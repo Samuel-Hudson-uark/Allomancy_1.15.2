@@ -12,7 +12,11 @@
   "_comment": "Fluids",
   "block.allomancy.molteniron": "Molten Iron",
 
+  "_comment": "Entities",
+  "entity.allomancy.copperclip": "Copper Clip",
+
   "_comment": "Materials",
+  "item.allomancy.copperclip": "Copper Clip",
   "item.allomancy.moltenironbucket": "Bucket of Molten Iron",
   "item.allomancy.crucible": "Crucible",
   "item.allomancy.carbondust": "Carbon Dust",
@@ -34,6 +38,10 @@
   "item.allomancy.hopsseeds": "Hops Seeds",
   "item.allomancy.hops": "Hops",
   "item.allomancy.emptyphial": "Empty Phial",
+
+  "_comment": "Tools",
+  "item.allomancy.diamondduelingpickaxe": "Diamond Dueling Pickaxe",
+  "item.allomancy.diamondduelingsword": "Diamond Dueling Sword",
 
   "_comment": "Copper",
   "block.allomancy.copperore": "Copper Ore",
