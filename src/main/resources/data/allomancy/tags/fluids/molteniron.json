@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "allomancy:iron_still",
-    "allomancy:iron_flowing"
+    "allomancy:molteniron",
+    "allomancy:molteniron_flowing"
   ]
 }

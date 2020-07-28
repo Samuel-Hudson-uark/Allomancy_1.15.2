@@ -409,8 +409,8 @@ public class Allomancy
 
         @SubscribeEvent
         public static void registerFluids(final RegistryEvent.Register<Fluid> event) {
-            event.getRegistry().register(new MoltenIron.Flowing().setRegistryName("iron_flowing"));
-            event.getRegistry().register(new MoltenIron.Source().setRegistryName("iron_still"));
+            event.getRegistry().register(ModFluids.IRON);
+            event.getRegistry().register(ModFluids.FLOWING_IRON);
         }
     }
 }
