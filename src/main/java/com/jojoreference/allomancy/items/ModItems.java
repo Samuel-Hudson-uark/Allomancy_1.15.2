@@ -22,6 +22,9 @@ import java.util.List;
 
 public class ModItems {
 
+    @ObjectHolder("allomancy:emptyphial")
+    public static EmptyPhial EMPTYPHIAL;
+    
     @ObjectHolder("allomancy:moltenironbucket")
     public static MoltenIronBucket MOLTENIRONBUCKET;
 

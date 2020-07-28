@@ -5,6 +5,7 @@ import com.jojoreference.allomancy.blocks.fluidblocks.MoltenIronBlock;
 import com.jojoreference.allomancy.blocks.machines.*;
 import com.jojoreference.allomancy.blocks.ores.*;
 import com.jojoreference.allomancy.blocks.storage_blocks.*;
+import com.jojoreference.allomancy.capabilities.*;
 import com.jojoreference.allomancy.fluids.ModFluids;
 import com.jojoreference.allomancy.fluids.MoltenIron;
 import com.jojoreference.allomancy.items.copper.*;
@@ -28,6 +29,8 @@ import com.jojoreference.allomancy.setup.IProxy;
 import com.jojoreference.allomancy.setup.ModSetup;
 import com.jojoreference.allomancy.setup.ServerProxy;
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.inventory.container.ContainerType;
@@ -36,9 +39,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.extensions.IForgeContainerType;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -68,10 +77,36 @@ public class Allomancy
         proxy.init();
     }
 
+    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.FORGE)
+    public static class EventRegister {
+
+        @SubscribeEvent
+        public static void attachCapability(AttachCapabilitiesEvent<Entity> event) {
+            if(event.getObject() instanceof PlayerEntity) {
+                System.out.println("Mistborn capability attached");
+                event.addCapability(new ResourceLocation("allomancy", "mistborn_cap"), new MistbornProvider());
+            }
+        }
+
+        @SubscribeEvent
+        public static void onPlayerLogsIn(PlayerEvent.PlayerLoggedInEvent event) {
+            if(event.getEntity() instanceof PlayerEntity) {
+                PlayerEntity player = ((PlayerEntity) event.getEntity());
+                Mistborn mistborn = (Mistborn) player.getCapability(MistbornProvider.MISTBORN_CAPABILITY, null).orElse(new Mistborn());
+                if(proxy instanceof ClientProxy) {
+                    mistborn.gain(1, false);
+                    player.sendMessage(new StringTextComponent("Amount of metal: " + mistborn.getResource()));
+                }
+            }
+
+        }
+    }
+
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
+
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             // register a new block here
